@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Jasmine Webster </title>
+<!-- CSS only -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link href="./style.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Inconsolata&display=swap" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+       $(document).ready(function(){
+       $('ul li a').click(function(){
+       $('li a').removeClass("active");
+       $(this).addClass("active");
+       });
+       });
+   </script>
+</head>
+ <body>
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+
+       <a class="navbar-brand" href="index.html">
+   <img src='immagini/mylogo.svg' class='logo' alt='logo' width='100px'/></a>
+
+
+ <!-- Menu toggler -->
+        <div id="myNav" class="overlay" >
+
+      <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="about.html">ABOUT</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
+    </div>
+
+
+    <span id='burger'style="font-size:20px;cursor:pointer" onclick="openNav()">menu &#9776; </span>
+
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "70%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script> <!-- End Menu toggler -->
+
+
+   </nav>
+   <!-- End Navbar -->
+
+   <!-- Hero 2 section -->
+   <section >
+     <div class='container'>
+       <div class='row align-items-center'>
+         <div class='col'>
+          <img src='immagini/profilo-sm.png' alt='schermata prototipo Girlfriend Collective' class='img-fluid'/>
+        </div>
+
+       <div class='col1'>
+        <h2>I'm Jasmine Webster</h2>
+        <p>Junior UX/UI Designer currently living in <del>England</del> Italy.<br>
+        I have a background in Graphic Design with about 10 years' experience in customized creative
+        solutions mostly gained in Communication Agencies and as freelance.</p>
+
+        <p>Currently studying UX/UI with Start2Impact, I like learning, the most recent thing I learnt is html/css... well ok just the basic...
+          but I developed this portfolio with the code.<br>
+          Curious about how objects are made and in general how things are working.</p>
+
+        <p>I eat liquorice roots, delicious &#127795;.<br>
+          I do graphic things, <a class='dash5' href='https://jasminewebster.wixsite.com/jasminewebster'  target='_blank'>check them out &#128397;&#65039;.</a><br>
+          I draft ATL commercials,<a class='dash5' href='adv.html'> take a look &#128250;</a>.</p>
+         </div>
+       </div>
+     </div>
+
+   </section>
+
+
+   <!-- End Hero 2 section -->
+
+
+   <section class='skills'>
+   <div class='container'>
+     <div class='row align-items-center'>
+       <div class='col1'>
+
+         <h1>
+         <span>Hard Skills</span> <span class='dash'>&#124;</span> <span class="role">Tools </span>
+         </h1>
+
+
+
+
+      <p><span class='dash3'><b>&#35;</b></span>Graphic Design &nbsp;&nbsp;&nbsp;
+   <span class='dash3'><b>&#35;</b></span>Brand Identity &nbsp;&nbsp;&nbsp;
+   <span class='dash3'><b>&#35;</b></span>Visual Communication &nbsp;&nbsp;&nbsp;
+    <span class='dash3'><b>&#35;</b></span>Typography &nbsp;&nbsp;&nbsp;
+      <span class='dash3'><b>&#35;</b></span>Research &nbsp;&nbsp;&nbsp;
+      <span class='dash3'><b>&#35;</b></span>Competitor Analysis &nbsp;&nbsp;&nbsp;
+        <span class='dash3'><b>&#35;</b></span>User Interface &nbsp;&nbsp;&nbsp;
+        <span class='dash3'><b>&#35;</b></span>Wireframing &nbsp;&nbsp;&nbsp;
+          <span class='dash3'><b>&#35;</b></span>Prototyping &nbsp;&nbsp;&nbsp;
+            <span class='dash3'><b>&#35;</b></span>IA &#124; Sitemap &nbsp;&nbsp;&nbsp;
+            <span class='dash'><b>&#35;</b></span><span class='light-text'>Usability Test</span> &nbsp;&nbsp;&nbsp;
+              <span class='dash3'><b>&#35;</b></span>Adobe Creative Suite &nbsp;&nbsp;&nbsp;
+              <span class='dash3'><b>&#35;</b></span>Figma &nbsp;&nbsp;&nbsp;
+                <span class='dash'><b>&#35;</b></span><span class='light-text'>HTML5 &#124; CSS3 </span>&nbsp;&nbsp;&nbsp;
+                <span class='dash3'><b>&#35;</b></span>Flash 2.0 &#128546; &nbsp;&nbsp;&nbsp;</span></p>
+
+      </div>
+       </div>
+   </div>
+
+   </section>
+
+
+<section id='footer'> <!--Footer-->
+    <div class='container'>
+      <div class='row align-items-center'>
+        <div class='col'>
+  <p>
+    &copy;2021 Jasmine-Exavier Webster&nbsp;&nbsp;&nbsp;&nbsp;<span class='dash4'>&#124;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class='link-footer' href='https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile' target='_blank'>
+        Linkedin&nbsp;&nbsp;<img src="immagini/linkedin.svg" width="20px"></a>
+
+      &nbsp;&nbsp;&nbsp;<span class='dash4'>&#124;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class='link-footer' href='https://jasminewebster.wixsite.com/jasminewebster' target='_blank'>
+        Graphic Design&nbsp;&nbsp;<img src='immagini/mylogo-white.svg' alt='Jasmine graphic design website' width="70px"/><a>
+</p>
+</div>
+</div>
+</div>
+</section> <!--End Footer-->
+
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#9650;</button>
+
+
+<!-- Back to top button-->
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script> <!--End Back to top button-->
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
