@@ -46,9 +46,13 @@ a.myemail:hover {
   text-decoration: none;
 }
 
+
+
 section {
   padding-bottom: 40px;
 }
+
+
 
 section h1 {
   padding-top: 30px;
@@ -60,12 +64,20 @@ section h1 {
 section p {
   font-size: 16px;
   font-weight: 300;
-}
+  }
+
+
+
+#thasadith{
+  font-family: 'thasadith';
+  font-size: 20px;
+  font-weight: bold;
+  }
 
 #next-project{
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
     }
 
 #hero .col {
@@ -116,7 +128,8 @@ section p {
         }
 
     .container-intro{
-      margin-top: 100px;
+      padding-top: 100px;
+      padding-bottom: 100px;
       align-items: center;
       display: flex;
       justify-content: center;
@@ -150,6 +163,10 @@ section p {
     background-color: #5fcfb3;
   }
 
+  hr.horizontal{
+    border: 1px solid teal;
+  }
+
   h1{
     font-size: 40px;
     font-family: 'Inconsolata', monospace;
@@ -162,10 +179,23 @@ section p {
     color: #6d5c5c;
   }
 
+
+  .role2{
+    font-size: 26px;
+    font-family: 'Inconsolata', monospace;
+    color: #6d5c5c;
+  }
+
   h3{
     font-size: 20px;
     font-family: 'Inconsolata', monospace;
     color: #6d5c5c;
+  }
+
+  h4, .role-w{
+    font-size: 30px;
+    font-family: 'Inconsolata', monospace;
+    color: #ffffff;
   }
 
 
@@ -249,7 +279,7 @@ p {
 
 /* Create four equal columns that sits next to each other */
 .col1, .col2, .col3 {
-  margin-left: 15px;
+  margin-left: 10px;
   margin-right: 10px;
   flex: 50%;
   max-width: 50%;
@@ -371,7 +401,7 @@ right: 20px;
 .overlay-content {
   position: absolute;
   top: 25%;
-  width: 50%;
+  width: 100%;
   text-align: right;
 right: 65px;
 color: white;
@@ -382,7 +412,7 @@ color: white;
 .overlay a {
 
   text-decoration: none;
-  font-size: 36px;
+  font-size: 50px;
 color: white;
   display: block;
   transition: 0.3s;
@@ -402,13 +432,21 @@ color: #707c99;
   font-size: 60px;
 }
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
+@media screen and (max-width: 450px) {
+  .overlay a {font-size: 30px}
   .overlay .closebtn {
   font-size: 40px;
   top: 0px;
   }
 }
+
+/* prova riduzione menu
+@media screen and (max-width: 700px) {
+  #myNav {
+  width: 100%;
+  }
+}
+*/
 
 /*Trial Nuovo Video Gallery*/
 

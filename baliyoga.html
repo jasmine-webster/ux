@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Jasmine Webster </title>
+<!-- CSS only -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Inconsolata&display=swap" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+           $(document).ready(function(){
+           $('ul li a').click(function(){
+           $('li a').removeClass("active");
+           $(this).addClass("active");
+           });
+           });
+     </script>
+    </head>
+
+
+ <body>
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+
+       <a class="navbar-brand" href="index.html">
+   <img src='immagini/mylogo.svg' class='logo' alt='logo' width='100px'/></a>
+
+
+ <!-- Menu toggler -->
+        <div id="myNav" class="overlay" >
+
+      <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="about.html">ABOUT</a>
+        <br/>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <br/>
+        <a href="contact.html">CONTACT</a>
+      </div>
+    </div>
+
+
+    <span id='burger'style="font-size:20px;cursor:pointer" onclick="openNav()">menu &#9776; </span>
+
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "70%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script> <!-- End Menu toggler -->
+
+
+   </nav>
+   <!-- End Navbar -->
+
+   <section id='hero3'>
+
+
+      <div class='container'>
+        <div class='row align-items-center'>
+
+<!-- 1° PARAGRAFO-->
+          <div class='col1'>
+      <h1>
+      <span>BALI YOGA</span> <span class='dash'>&#124;</span> <span class="role">UX/UI </span> <span class='dash'>&#95;</span> <span class="role2"> Desktop, Mobile, App </span>
+   </h1>
+ <p>BaliYoga is a yoga center based in Milan which offers yoga classes
+   with various styles and levels, and this is a Case Study.</p>
+ <p>Services and advantages:
+
+ <ul>
+   <li>2 types of lessons: in studio or interactive</li>
+ <li> Professional training courses</li>
+ <li> Corporate classes</li>
+ <li> Workshop</li>
+ <li> 25 teachers</li>
+ <li> 14 yoga styles</li>
+ <li> 3 levels: basic, intermediate, advanced</li>
+ </ul></p>
+</div>
+
+<div class='col'>
+<img src='immagini/bali-desktop.svg' alt='schermata prototipo baliyoga' class='img-fluid'/>
+</div>
+<!-- FINE 1° PARAGRAFO-->
+
+<!-- LOGO DESIGN-->
+<div class='col1'>
+      <p><b>Logo redesign</b><br/>
+        <br/>
+      I kept the flower of the original logo that becomes a lotus of 7 petals with a circle representing
+        the chakras at the top.<br/>
+        The "Thasadith - Bold" font takes up the elongated shapes of the petal:</p>
+
+<div id='thasadith'>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</div>
+<br/>
+<p>The current logo is orange, a color widely used in the food environment; the new colors are the result
+of a survey submitted to a group of users:<br/>
+<b>INDIGO</b> - 6th Chakra (third eye chakra)<br/>
+Symbol of spirituality and inner awakening; it represents the relationship with our inner capacities.<br/>
+<b>GREEN</b> - 4th Chackra (heart chakra)<br/>
+The color of harmony and nature: it symbolizes balance, peace and renewal.</p>
+
+</div>
+<div class='col'>
+<img src='immagini/bali-logo.svg' alt='schermata logo baliyoga' class='img-fluid'/>
+</div>
+<!-- FINE LOGO DESIGN-->
+
+<div class='col1'>
+<h1>Problem Statement</h1>
+<p>The website presents 3 main problems that cause usability issues:
+ <ol>
+   <li> from the homepage is not clear the main service offered;</li>
+ <li> the structure of the sitemap is confusing;</li>
+ <li> too many CTAs that prevent a smooth user flow.</li>
+ </ol>
+
+Assumptions:<br>
+ <br/>
+ <ul>
+   <li> Change sitemap and IA</li>
+ <li> Build linear user flows</li>
+ <li> Move some CTAs</li>
+ </ul></p>
+</div>
+
+<div class='col'>
+<img src='immagini/bali-solo-euristiche.svg' alt="euristiche" class='img-fluid'/>
+
+</div>
+
+    <div class='col1'>
+   <h1>Discovery</h1>
+   <p>After running a heuristic review to figure out the issues of the website and I generated the original sitemap.</p>
+
+   </div>
+
+
+   <img src='immagini/bali-sitemap-pagine.svg' alt="sitemap" class='img-fluid'/>
+
+   </div>
+
+
+
+   <div class='container'>
+     <div class='row align-items-center'>
+   <div class='col1'>
+   <h1>User research &amp; Personas</h1>
+   <p>I conducted a survey to a group of 70 users in target and defined the Personas from the data analysis.</p>
+   </div>
+
+
+   <div class='col'>
+   <img src='immagini/bali-survey.svg' alt="Survey" class='img-fluid'/>
+   </div>
+</div>
+   <div class='col'>
+   <img src='immagini/bali-personas.svg' alt="Personas" class='img-fluid'/>
+   </div>
+
+   <div class='col1'>
+   <h1>User Journey</h1>
+   <p>I initially mapped a user journey on the website as is for each persona. The pain points surfaced from the
+     browsing experience have led to a second user jurney for each one with the opportunities for improvement emerged.</p>
+   </div>
+   <div class='col'>
+   <img src='immagini/bali-journey.svg' alt="User journey" class='img-fluid'/>
+   </div>
+
+
+   <div class='col1'>
+   <h1>Information Architecture</h1>
+   <h2>(Sitemap)</h2>
+   <p>The opportunities emerged through the user journeys pain points brought to a modification of the original sitemap.</p>
+
+ </div>
+<div class='col'>
+   <img src='immagini/bali-newsitemap.svg' alt="sitemap"class='img-fluid'/>
+</div>
+
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+   <h1>Wireframing</h1>
+   <p>I then developed the clickable wireframes according to the following flow:<br/>
+     <br/>
+     <b>DESKTOP &amp; MOBILE</b>
+    <ul>
+      <li> Reservation of a free trial lesson</li>
+      <li> Lesson booking on the calendar</li>
+      <li> Purchase of a membership card</li>
+      </ul>
+      <b>APP</b>
+     <ul>
+       <li> Calendar and filters</li>
+       <li> Simplified navigation</li>
+       <li> Dark &#47; Light mode</li>
+       </ul>
+</p>
+   </div>
+
+<div class='col'>
+   <img src='immagini/bali-wireframe.svg' alt="Wireframe" class='img-fluid'/>
+</div>
+</div>
+
+
+
+   <div class='col1'>
+   <h1>User flow</h1>
+   <p>These following schemes are not diagrams but very synthesized flows.</p>
+   </div>
+   <div class='col'>
+   <img src='immagini/bali-flow.svg' alt="user flow" class='img-fluid'/>
+   </div>
+
+
+
+   <div class='col1'>
+   <h1>UI kit</h1>
+   <p>The main colors of the logotype divide the CTAs into 2 types to provide visual aid to the user:
+<ul>
+  <li>INDIGO &rsaquo; For all the actions that don't involve purchase 	&#47; payment.</li>
+<li>GREEN &rsaquo; For actions related to purchase 	&#47; payment.</li>
+</ul>
+
+   </p>
+   </div>
+   <div class='col'>
+   <img src='immagini/bali-ui-kit.svg' alt="user flow" class='img-fluid'/>
+   </div>
+</div>
+</div>
+
+<div class='container'>
+  <div class='row align-items-center'>
+    <div class='col1'>
+<h1>
+<span>Prototype</span> <span class='dash'>&#124;</span> <span class="role">Desktop interface</span>
+</h1>
+<br/>
+</div>
+<div class='col'>
+<video width="85%"playsinline autoplay muted loop>
+    <source src="video/baliyoga-video-desktop.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded video.
+</video>
+</div>
+</div>
+</div>
+
+
+    <div class='container'>
+      <div class='row align-items-center'>
+       <div class='col1'>
+<h1>
+<span>Prototype</span> <span class='dash'>&#124;</span> <span class="role">Mobile &amp; App interface</span>
+</h1>
+</div>
+  <div class='col'>
+<video  width="200px" playsinline autoplay muted loop>
+    <source src="video/bali-video-mobile.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded video.
+</video>
+</div>
+
+<div class='col'>
+<video  width="200px" playsinline autoplay muted loop>
+<source src="video/baliyoga-video-app.mp4"
+        type="video/mp4">
+Sorry, your browser doesn't support embedded video.
+</video>
+</div>
+
+</div>
+
+
+
+
+
+
+    <div class='container'>
+      <div class='row align-items-center'>
+        <div class='col1'>
+    <h1>Usability test</h1>
+    <p>I assumed to run 3 tests with various tasks on the main aspects of the interfaces
+      to determine the level of usability.<br/>
+   <ul>
+   <li> In-person, unmoderated</li>
+   <li> Time assigned</li>
+   <li> Target of 5 people (female and male) with medium&#47;high devices proficiency
+     (because online bookingis always requested)</li>
+   </ul>
+ </p>
+</div>
+<div class='col'>
+  <br/>
+  <br/>
+    <p><b>Criteria</b><br/>
+      <ul>
+      <li> Task completion rate</li>
+      <li> Time to completion </li>
+      <li> Last click </li>
+      <li> Task duration </li>
+      <li> Average time on page and number of clicks </li>
+      <li> Error rate </li>
+    </ul>
+    <br/>
+</div>
+
+<hr class="horizontal">
+
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+<h2>
+TEST 1 <span class="dash"> Desktop &amp; Mobile Interface </span>
+</h1>
+<p><b>Method</b><br/>
+Scripted, unmoderated test.</p><br/>
+
+<p><b>Scenario A</b><br/>
+  You have never done yoga but you are interested in practicing it.
+  You have been recommended the BaliYoga center which offers 1 free trial lesson.
+<br/>
+<br/>
+<b>Closed task A</b><br/>
+You are on the homepage of the website and you want to request &#47; book a free trial lesson. Where do you click?<br/>
+<br/>
+<b>Goals A</b><br/>
+  Understanding if the user who interacts with the site for the first time immediately learns that he can get a free lesson.
+Especially in the mobile version where the path is only possible from the home.
+  </p>
+  <br/>
+<br/>
+</div>
+
+<div class='col'>
+  <p><b>Scenario B</b><br/>
+  You want to purchase a specific package of yoga classes to follow at your home.<br/>
+<br/>
+  <b>Open-ended task B</b><br/>
+You must purchase a package of "5 Lessons" only interactive. What path do you take?
+<br/>
+<br/>
+<b>Goals B</b><br/>
+  It is possible to proceed in various ways, by: <br/>
+<ul>
+  <li> Hero in the home </li>
+  <li> Menu &gt; Lessons</li>
+</ul></p>
+
+<p>The aim is to understand if the splitting of gym &#47; interactive lessons packages is clear enough
+  and if the user quickly understands that some packages are mixed.
+  </p>
+</div>
+
+<div class='col1'>
+  <p><b>Scenario C</b><br/>
+  You already have a subscription to yoga courses and you just want to book
+  your next lesson on the website's Calendar, because you know that booking is mandatory for each lesson before taking it.
+  <br/>
+<br/>
+<b>Open-ended task C</b><br/>
+Book the evening lesson on Friday 19 March held by teacher Carlotta.</p>
+<br/>
+
+<b>Goals C</b><br/>
+It is possible to complete the task by:<br/>
+<ul>
+  <li> CTA on page <em>Lessons in the gym</em></li>
+  <li> Menu &gt; Lessons &gt; Calendar</li>
+  <li> Hyperlink Calendar in <em>Prices</em></li>
+</ul>
+</p>
+  <p>Understand if the booking procedure is fluid.
+  </p>
+</div>
+
+
+</div>
+</div>
+
+<hr class="horizontal">
+
+<div class='container'>
+  <div class='row align-items-center'>
+    <div class='col1'>
+<h2>
+TEST 2 <span class="dash"> Desktop &amp; Mobile Interface </span>
+</h2>
+<p><b>Method</b><br/>
+5 second test.</p><br/>
+
+<p><b>Scenario A</b><br/>
+<em>Gym Lessons</em> page is shown and the user is asked to memorize as many elements as possible within 5 seconds.
+ When the time is up, some questions are asked.
+</p><br/>
+
+<p><b>Questions A</b><br/>
+<ul>
+  <li> What is the service offered in the page you saw?</li>
+  <li> What can you do through this page?</li>
+  <li> If you click the green button what happens?</li>
+  <li> What can you do if you click the blue button?</li>
+  <li> Does this page give you information on interactive lessons?</li>
+</ul>
+</p><br/>
+
+<p><b>Goals A</b><br/>
+Find out if:<br/>
+<ul>
+  <li> UI communicates the message correctly</li>
+  <li> Contents are immediately clear</li>
+  <li> CTAs are perceived correctly</li>
+</ul>
+</p>
+</div>
+
+<hr class="horizontal">
+<div class='container'>
+  <div class='row align-items-center'>
+    <div class='col1'>
+<h2>
+TEST 3 <span class="dash"> App Interface </span>
+</h2>
+<p><b>Method</b><br/>
+Scripted, unmoderated test.</p><br/>
+
+<p><b>Scenario A</b><br/>
+  You are in a rush and want to view specific courses through filters.
+</p><br/>
+
+
+<p><b>Closed task A</b><br/>
+Set filters to view only the advanced courses held on the afternoon of Friday, March 19.<br/>
+<br/>
+  <b>Goals A</b><br/>
+  Find out if:<br/>
+  <ul>
+    <li> Users accesses the features intuitively.</li>
+    <li> Contents are immediately clear</li>
+    <li> The flow is clean and linear</li>
+  </ul>
+  </p>
+  <br/>
+  <br/>
+  <p><b>Scenario B</b><br/>
+  You have tired eyesight but you are curious to explore the app and its lesson calendar.</p>
+
+  <p><b>Closed task B</b><br/>
+  View contents by setting night mode.</p>
+
+  <p><b>Goals B</b><br/>
+  Understand if the user is able to set the required mode immediately.
+    </p>
+    <br/>
+    <br/>
+
+  <p><b>Scenario C</b><br/>
+You have just installed the BaliYoga App and haven't explored it yet, but you know their site.
+    <br/>
+<br/>
+
+    <b>Questions C</b><br/>
+      <ul>
+        <li> In your opinion, what is inside the Bali Yoga icon? </li>
+        <li> What content do you expect to find if you click it?</li>
+            </ul></p>
+
+    <p><b>Goal C</b><br/>
+    Understand if the categories provided are sufficient or if on the contrary they are superfluous.
+      </p>
+
+</div>
+
+
+
+
+
+   <div id='next-project'> <!--Next project-->
+             <div class='col'>
+             <h2>
+               <a id='mybtn-side'href='girlfriend.html'>&#9664;&nbsp;</a>&nbsp;NEXT PROJECT&nbsp;<span class='dash'>&colon;</span>
+             <span class="role">Nyu&sdot;me</span> <a id='mybtn-side' href='portfolio.html'>&#9654;</a>
+           </h2>
+
+
+</section>
+
+
+
+
+
+
+
+
+   <section id='footer'> <!--Footer-->
+       <div class='container'>
+         <div class='row align-items-center'>
+           <div class='col'>
+     <p>
+       &copy;2021 Jasmine-Exavier Webster&nbsp;&nbsp;&nbsp;&nbsp;<span class='dash4'>&#124;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+         <a class='link-footer' href='https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile' target='_blank'>
+           Linkedin&nbsp;&nbsp;</a>
+
+         &nbsp;&nbsp;<span class='dash4'>&#124;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+         <a class='link-footer' href='https://jasminewebster.wixsite.com/jasminewebster'target='_blank'>
+           Graphic Design&nbsp;&nbsp;<a>
+   </p>
+   </div>
+   </div>
+   </div>
+   </section> <!--End Footer-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#9650;</button>
+
+
+
+ <script> <!-- Back to top -->
+ //Get the button
+ var mybutton = document.getElementById("myBtn");
+
+ // When the user scrolls down 20px from the top of the document, show the button
+ window.onscroll = function() {scrollFunction()};
+
+ function scrollFunction() {
+   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+     mybutton.style.display = "block";
+   } else {
+     mybutton.style.display = "none";
+   }
+ }
+
+ // When the user clicks on the button, scroll to the top of the document
+ function topFunction() {
+   document.body.scrollTop = 0;
+   document.documentElement.scrollTop = 0;
+ }
+ </script> <!--End Back to top button-->
+
+
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
