@@ -15,6 +15,22 @@ nav {
 
 }
 
+ul.b {
+  list-style: none;
+}
+
+
+ul.b li::before {
+  content:"\2014\a0";
+  color: #707c99;
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 0.5em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+
+
 .navbar-brand img {
   max-height: 50px;
   padding-left: 20px;
