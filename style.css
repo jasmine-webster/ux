@@ -70,6 +70,7 @@ section {
 
 
 
+
 section h1 {
   padding-top: 30px;
     font-weight: 400;
@@ -296,7 +297,7 @@ p {
 .column-twin {
   flex: 50%;
 padding-top: 20px;
-  padding-left: 70px;
+  padding-left: 20px;
 }
 
 
