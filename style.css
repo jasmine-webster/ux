@@ -194,6 +194,10 @@ section p {
     color: #6d5c5c;
   }
 
+  .green{
+    color: #e1f2ec;
+  }
+
 
   .role2{
     font-size: 26px;
@@ -289,6 +293,11 @@ p {
   flex-wrap: wrap;
 }
 
+.column-twin {
+  flex: 50%;
+padding-top: 20px;
+  padding-left: 70px;
+}
 
 
 
