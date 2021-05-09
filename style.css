@@ -325,6 +325,7 @@ padding-top: 20px;
   color: #5fcfb3;
   cursor: pointer;
   text-decoration: none;
+  align-items: center;
 }
 
 #mytn2:hover {
@@ -335,6 +336,7 @@ padding-top: 20px;
   color: #ba9dc9;
   cursor: pointer;
   text-decoration: none;
+  align-items: center;
 }
 
 
