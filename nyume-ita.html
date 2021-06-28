@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+ <html lang="it">
+   <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Jasmine Webster </title>
+<!-- CSS only -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Inconsolata&display=swap" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+           $(document).ready(function(){
+           $('ul li a').click(function(){
+           $('li a').removeClass("active");
+           $(this).addClass("active");
+           });
+           });
+     </script>
+    </head>
+
+
+ <body>
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+
+       <a class="navbar-brand" href="index-ita.html">
+   <img src='immagini/mylogo.svg' class='logo' alt='logo' width='100px'/></a>
+
+
+ <!-- Menu toggler -->
+        <div id="myNav" class="overlay" >
+
+      <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="about-ita.html">CHI SONO</a>
+        <br/>
+        <a href="baliyoga-ita.html">PORTFOLIO</a>
+        <br/>
+        <a href="contact-ita.html">CONTATTI</a>
+        <br/>
+          <a class='language' href="index-ita.html">ITA</a> <span class='dash6'>&#124;</span> <a class='language' href="index.html">ENG</a>
+      </div>
+    </div>
+
+
+    <span id='burger'style="font-size:20px;cursor:pointer" onclick="openNav()">menu &#9776; </span>
+
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "70%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script> <!-- End Menu toggler -->
+
+
+   </nav>
+   <!-- End Navbar -->
+
+   <section id='hero1'>
+      <div class='container'>
+        <div class='row align-items-center'>
+
+          <div class='col1'>
+           <h1>
+           <span>NYU&sdot;ME</span> <span class='dash'>&#124;</span><span class="role"> App </span>
+           </h1>
+
+          <p><b>Concept nome:</b> Nyu&sdot;Me (pronuncia british di <i>New Me</i>)</p>
+          <p>NyuMe è un'app che offre una raccolta di semplici rimedi e ricette utilizzando
+            ingredienti comuni, ideale per le persone che amano affidarsi a prodotti naturali
+            per la cura del corpo.</p>
+
+    <p><b>Ruolo:</b> Questo è il mio primo progetto di UX e UI, si tratta di un Case Study concettuale
+      in cui ho coperto tutte le fasi dalla definizione del problema, allo svolgimento del test di usabilità,
+      al design dell'interfaccia.<br/>
+  </p>
+  <p><b>Durata:</b> 7-8 settimane.</p>
+
+         </div>
+
+
+    <div class='col'>
+   <img src='immagini/allelements.jpg' alt='schermata prototipo Nyume' class='img-fluid'/>
+   </div>
+</section>
+
+
+
+<section style='#f8f9fa'>
+  <div class='container'>
+    <div class='row align-items-center'>
+   <div class='col1'>
+   <h1>PROBLEM STATEMENT</h1>
+   <p>Nel web sono disponibli molte fonti che offrono consigli e trucchi per la beauty care
+     con prodotti naturali: blog, articoli, video o sezioni all'interno di siti relativi
+     al lifestyle naturale e benessere, ma <strong>non esiste una fonte esaustiva dedicata esclusivamente
+       a rimedi beauty dove trovare tutte le possibili ricette dalla A alla Zeta a base di ingredienti naturali.</strong><br/>
+     <br/>
+Ipotizzo che le persone siano impegnate, quindi l'utente a cui piace affidarsi a prodotti naturali preferirebbe
+non perdere tempo e<strong> ottenere informazioni sui rimedi per la cura della pelle / capelli possibilmente
+  da un'unica fonte per trovare tutte le possibili ricette.</strong></p>
+    </div>
+    <div class='col'>
+    <img src='immagini/lean-ita.svg' alt="" class='img-fluid'/>
+    </div>
+
+    <div class='container'>
+      <div class='row align-items-center'>
+        <div class='col1'>
+   <h1>COMPETITOR</h1><h2> COSA &#47; CHI c'è nel mercato?</h2>
+  <p> Per capire come il prodotto si inserirebbe nel mercato,
+    ho individuato i competitor diretti e indiretti per scoprire le alternative già esistenti
+    nello stesso segmento. <br/>
+    I principali sono rappresentati da <strong>3 app</strong>: <br/>
+    <br/>
+    DAILY BEAUTY CARE, BEAUTY CARE e BBEAUTIFUL <br/>
+    <br/>
+    Per le <strong>feature che offrono, il pubblico a cui si rivolgono e il bacino di utenza che incontrano</strong>
+    (circa +5.000 fino a +500.000 download).<br/>
+   Ognuno è stato profilato analizzando:
+   <ul>
+     <li> Obiettivi chiave</li>
+   <li> Strategia generale</li>
+   <li> Vantaggio di mercato</li>
+   <li> Target di mercato</li>
+   <li> Strategie di marketing</li>
+   <li> Prezzi e costi</li>
+   <li> Contenuti</li>
+   </ul></p>
+   <p>É seguita un'analisi del loro profilo SWOT.</p>
+   </div>
+   <div class='col'>
+   <img src='immagini/nyume-analysis1-ita.svg' alt="Analisi Competitor" class='img-fluid'/>
+   </div>
+   </div>
+<div class='col1'>
+    <img src='immagini/nyume-analysis2-ita.svg' alt="Analisi SWOT" class='img-fluid'/>
+</div>
+
+
+   <div class='col1'>
+   <h1>RICERCA UTENTE</h1>
+   <p> Tramite una ricerca quantitativa su 93 persone tra 18-60 anni,
+     sono state raccolte informazioni sulla beauty routine, quanto tempo viene dedicato,
+     quale problema di pelle preoccupa maggiormente l'utente.
+     Dopo aver analizzato i dati raccolti ho creato 3 Persona e i corrispondenti user journey.</p>
+   </div>
+   <div class='col'>
+   <img src='immagini/nyume-survey-ita.svg' alt="Survey" class='img-fluid'/>
+
+   </div>
+
+
+
+   <div class='col'>
+     <h1>3 PERSONAS &amp; <br/>
+       I LORO JOURNEY</h1>
+   <img src='immagini/nyume-personas.svg' alt="Personas" class='img-fluid'/>
+</div>
+</section>
+
+
+<section id='hero1'>
+    <div class='container'>
+      <div class='row align-items-center'>
+   <img src='immagini/nyume-journey.svg' alt="User Journeys" class='img-fluid'/>
+</section>
+
+   <div class='container'>
+     <div class='row align-items-center'>
+   <div class='col1'>
+     <br/>
+      <h2>Flowmap</h2>
+   <p>Per definire come il contenuto sarà strutturato e presentato agli utenti quando interagiscono con l'interfaccia.</p>
+   </div>
+
+
+   <img src='immagini/sitemap.svg' alt="flowmap"class='img-fluid'/>
+
+
+   <div class='col1'>
+   <h1>WIREFRAME Lo-Fi </h1>
+   <p>Tramite degli sketch ho costruito la struttura di base delle pagine e la gerarchia dei contenuti.</p>
+   </div>
+
+   <img src='immagini/wireframe.png' alt="" class='img-fluid'/>
+ </div>
+</div>
+</section>
+
+<section id='hero1'>
+    <div class='container'>
+      <div class='row align-items-center'>
+   <div class='col1'>
+   <h1>FLUSSO UTENTE</h1>
+   <p>L'interazione con l'interfaccia avviente tramite 2 percorsi, scegliendo tra:
+     <ul>
+       <li> Elemento (ingrediente)</li>
+       <li> Trattamento</li>
+     </ul>
+   </p>
+   </div>
+   <img src='immagini/user flow.svg' alt="" class='img-fluid'/>
+</section>
+
+
+
+
+<section>
+
+    <div class='container'>
+      <div class='row align-items-center'>
+
+        <div class='col1'>
+    <h1>TEST CON GLI UTENTI</h1>
+    <p>Ho condotto un test su 5 utenti tra i 25-32 anni con dei wireframe cliccabili mid-fi,
+      chiedendo di completare 3 task.<br/>
+   <br/>
+   <b>Metodo:</b> In persona, non moderato.<br/>
+   <br/>
+   <b>Tipo:</b> Task Scenario.<br/>
+   <br/>
+  METRICHE:
+  <ul class='b'>
+    <li> Tempo medio su ogni schermata &#47; azione</li>
+   <li> Heatmap</li>
+   <li> 1° e ultimo click</li>
+   </ul>
+   <br/>
+ </p>
+</div>
+
+
+ <div class='col1'>
+<p><b>TASK SCENARIO 1</b><br/>
+  "Ti rendi conto di aver comprato troppi limoni e se non li usi scadranno presto.<br/>
+  Quindi hai deciso di usarli per fare una maschera per capelli.<br/>
+  Quale percorso sceglieresti per vedere cosa puoi fare per i tuoi capelli con dei limoni?"<br/>
+  <br/>
+</div>
+<img src='immagini/nyume-user-test1-ita.svg' alt='Test di usabilità' class='img-fluid'/>
+
+<div class='col1'>
+<p><b>TASK SCENARIO 2</b><br/>
+ "Hai appena scaricato l'app e vorresti realizzare una maschera per le occhiaie.<br/>
+Dove andresti a trovare il rimedio che stai cercando?" <br/>
+ <br/>
+</div>
+<img src='immagini/nyume-user-test2-ita.svg' alt='Test di usabilità' class='img-fluid'/>
+</div>
+
+<div class='col1'>
+<p><b>TASK SCENARIO 3</b><br/>
+ "Sei una donna e hai appena fatto un trattamento per te. Adesso vorresti vedere un trattamento da fare sul tuo partner.<br/>
+ Dove andresti all'interno dell'app per vedere i rimedi per la barba maschile?"</p>
+</div>
+<img src='immagini/nyume-user-test3-ita.svg' alt='Test di usabilità' class='img-fluid'/>
+
+
+
+<div class='col1'>
+   <p>Il tempo medio di completamento è stato di circa 60 secondi per attività.<br/>
+    I tester hanno trovato il prodotto molto semplice e facile da usare. <br/>
+    Attraverso il loro primo e ultimo click su ogni schermata ho individuato le modifiche necessarie in termini di UI e
+    ho quindi proseguito con il design dell'interfaccia.
+    </p>
+    </div>
+</div>
+</section>
+
+
+  <section id='hero1'>
+   <div class='container'>
+     <div class='row align-items-center'>
+
+       <div class='col1'>
+        <h1><span>SOFT UI</span> <span class='dash'>&#124;</span> <span class="role">Neomorfismo</span></h1>
+       <p>Ho deciso di usare questo trend perchè volevo far risaltare i prodotti colorati (ingredienti)
+         in un ambiente monocromatico (interfaccia) e lasciare che i livelli di contrasto e ombra tipici della Soft UI
+         mostrassero CTA e componenti interattivi.</p>
+       </div>
+     </div>
+    </div>
+
+    <img src='immagini/neumorphism-kit.svg' alt="Design Kit" class='img-fluid'/>
+
+
+        <div class='container'>
+          <div class='row align-items-center'>
+          <div class='col1'>
+      <h1><span>PROTOTIPO</span> <span class='dash'>&#124;</span> <span class="role">App </span></h1>
+    </div>
+      <div class='col'>
+    <video  width="250px" playsinline autoplay muted loop>
+        <source src="video/nyume-video.mp4"
+                type="video/mp4">
+        Sorry, your browser doesn't support embedded video.
+    </video>
+   </div>
+
+
+   </div>
+   </div>
+</section><!--End Hero1-->
+
+
+   <div class='nyume'>
+     <div class='container'>
+       <div class='row align-items-center'>
+         <div class='col1'>
+           <br/>
+           <br/>
+          <h1>INTERFACCIA UTENTE</h1>
+
+         </div>
+         <img src='immagini/nyume-prototype-ita.svg' alt="Screens prototype" class='img-fluid'/>
+</div>
+</div>
+
+   <div id='next-project'> <!--Next project-->
+    <div class='col'>
+             <h4>
+               <a id='mybtn-side'href='girlfriend-ita.html'>&#9664;&nbsp;</a>&nbsp;PROSSIMO PROGETTO&nbsp;<span class='dash'>&colon;</span>
+             <span class="role-w">Bali Yoga</span> <a id='mybtn-side' href='baliyoga-ita.html'>&#9654;</a>
+           </h4>
+         </div>
+       </div>
+     </div>
+
+
+       <section id='footer'> <!--Footer-->
+           <div class='container'>
+             <div class='row align-items-center'>
+               <div class='col'>
+         <p>
+           &copy;2021 Jasmine-Exavier Webster&nbsp;&nbsp;&nbsp;&nbsp;<span class='dash4'>&#124;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+             <a class='link-footer' href='https://www.linkedin.com/in/jasminewebster/' target='_blank'>
+               Linkedin&nbsp;&nbsp;</a>
+
+             &nbsp;&nbsp;<span class='dash4'>&#124;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+             <a class='link-footer' href='https://jasminewebster.wixsite.com/jasminewebster'target='_blank'>
+               Graphic Design&nbsp;&nbsp;<a>
+       </p>
+       </div>
+       </div>
+       </div>
+       </section> <!--End Footer-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#9650;</button>
+
+
+
+ <script> <!-- Back to top -->
+ //Get the button
+ var mybutton = document.getElementById("myBtn");
+
+ // When the user scrolls down 20px from the top of the document, show the button
+ window.onscroll = function() {scrollFunction()};
+
+ function scrollFunction() {
+   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+     mybutton.style.display = "block";
+   } else {
+     mybutton.style.display = "none";
+   }
+ }
+
+ // When the user clicks on the button, scroll to the top of the document
+ function topFunction() {
+   document.body.scrollTop = 0;
+   document.documentElement.scrollTop = 0;
+ }
+ </script> <!--End Back to top button-->
+
+
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jasmine Webster </title>
+    <!-- CSS only -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+ <link href="./style.css" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Inconsolata&display=swap" rel="stylesheet">
+
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+        $('ul li a').click(function(){
+        $('li a').removeClass("active");
+        $(this).addClass("active");
+        });
+        });
+    </script>
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+
+      <a class="navbar-brand" href="index-ita.html">
+  <img src='immagini/mylogo.svg' class='logo' alt='logo' width='100px'/></a>
+
+
+  <!-- Menu toggler -->
+       <div id="myNav" class="overlay" >
+
+     <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+     <div class="overlay-content">
+       <a href="about-ita.html">CHI SONO</a>
+       <br/>
+       <a href="baliyoga-ita.html">PORTFOLIO</a>
+       <br/>
+       <a href="contact-ita.html">CONTATTI</a>
+       <br/>
+         <a class='language' href="index-ita.html">ITA</a> <span class='dash6'>&#124;</span> <a class='language' href="index.html">ENG</a>
+     </div>
+   </div>
+
+
+   <span id='burger'style="font-size:20px;cursor:pointer" onclick="openNav()">menu &#9776; </span>
+
+   <script>
+   function openNav() {
+     document.getElementById("myNav").style.width = "70%";
+   }
+
+   function closeNav() {
+     document.getElementById("myNav").style.width = "0%";
+   }
+   </script> <!-- End Menu toggler -->
+
+
+  </nav>
+  <!-- End Navbar -->
+
+<section id='hero2'>
+  <div class='container'>
+    <div class='row align-items-center'>
+    <div class='col1'>
+   <h1><span>GIRLFRIEND </span> <span class='dash'>&#124;</span> <span class="role">Desktop &amp; Mobile</span>
+</h1>
+   <p>Girlfriend Collective è un lifestyle brand che produce activewear sostenibile utilizzando materiale plastico riciclato,
+     impegnato a creare prodotti che abbiano un impatto positivo dal punto di vista sociale ed ecologico.<br/>
+     <br/>
+     <b>SFIDA</b><br/>
+     Poiché si tratta di un Case Study assegnato, è stato richiesto di fornire un miglioramento dell'esperienza utente e dell'interfaccia utente.</p>
+
+       <p><b>Ruolo:</b>Ho seguito tutte le fasi del progetto, dalla Ricerca al Test di Usabilità, fino alle schermate finali.<br/>
+ </p>
+ <p><b>Durata:</b> 5 settimane.</br>
+</br>
+</br>
+Per capire come avrei potuto migliorare l'esperienza utente, dovevo prima scoprire:
+   <ul>
+     <li> chi è il BRAND</li>
+     <li> chi sono i COMPETITOR </li>
+     <li> chi è il TARGET attuale e potenziale</li>
+ </p>
+
+ </div>
+ <div class='col'>
+<img src='immagini/gf-desktop-ita.svg' alt='prototipo Girlfriend' class='img-fluid'/>
+</div>
+</section>
+
+<section style='#f8f9fa'>
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+<h1>RICERCA SUL BRAND</h1>
+
+<p>Attraverso una ricerca approfondita ho scoperto <strong>CHI è il marchio,
+  PERCHÉ è nato, QUALI sono i valori e obiettivi di business</strong>.<br/>
+Successivamente ho appreso il suo processo di produzione, tintura e tutti i materiali/tessuti
+utilizzati per il suo activewear.</p>
+</div>
+<img src='immagini/gf-brand-research.svg' alt='The research on the Brand' class='img-fluid'/>
+</div>
+
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+<br>
+<h2>Sitemap e 10 Euristiche</h2>
+
+<p>Per stabilire se il sito, nella sua versione desktop e mobile,
+  soddisfa i requisiti di usabilità e funzionalità, l'ho analizzato secondo le 10 euristiche di Nielsen
+  e ho trovato per ognuna pro e contro.</br>
+Nel complesso il sito web è usabile ma gli <strong>attributi di usabilità </strong>(apprendibilità, efficienza, memorabilità, prevenzione degli errori e soddisfazione)
+<strong>non sono pienamente soddisfatti.</strong>
+</p>
+</div>
+<div class='col'>
+<img src='immagini/gf-ia.svg' alt='sitemap and information architecture' class='img-fluid'/>
+</div>
+<img src='immagini/gf-heuristic.svg' alt='10 Heuristics' class='img-fluid'/>
+
+</div>
+</div>
+</div>
+</section>
+
+<section id='hero2'>
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+<br>
+<h1>RICERCA SUGLI ALTRI BRAND</h1>
+
+<p>I competitor diretti sono <b>brand US che producono activewear sostenibile</b>  e condividono le seguenti caratteristiche principali:
+<ul>
+  <li> Audience interamente femminile</li>
+<li> E-commerce</li>
+<li> Abbigliamento Top e Bottom in materiali plastici riciclati</li>
+<li> Processi di tintura eco friendly</li>
+<li> Certificazione Oeko-Tex </li>
+<li> Commercio equo e solidale</li>
+<li> Adesione a iniziative/organizzazioni no profit </li>
+</ul>
+</p>
+
+<p>Poichè si tratta di brand direct-to-consumer, ho trovato appropriato confrontarli attraverso la "Feature Inventory".</p>
+</div>
+<div class='col'>
+<img src='immagini/gf-competitor-card.svg' alt="" class='img-fluid'/>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+<h1>RICERCA SUGLI UTENTI</h1>
+
+  <p><strong>Accessibilità: Actiwear per tutte le forme e taglie</strong><br/>
+  Il gruppo di donne mostrato sui canali del marchio è molto diversificato con tutte le forme del corpo, età ed etnie.
+  Le taglie vanno dalla 2XS alla 6XL nei leggings e dalla XS alla 3XL nei top.</p>
+<p><strong>Community femminile</strong><br/>
+
+Il marchio è impegnato a costruire una connessione tra persone che hanno a cuore l'origine dell'abbigliamento.
+L'obiettivo principale è creare una comunità di donne che ne condividano i valori:
+creare prodotti che abbiano un impatto sociale ed ecologico positivo.</p>
+
+<p><strong>Chi è il target a cui punta l'azienda?</strong><br/>
+    Girlfriend Collective afferma che si rivolge principalmente ai Millennial dai 24 ai 39 anni
+    e alla Generazione Z (sotto i 23 anni), quest'ultima considerata nativa digitale.</p>
+<p><strong>Cosa dicono i clienti?
+</strong><br/>
+
+  Le recensioni in canali esterni al brand e quindi non "influenzate" sono generalmente positive.
+</p>
+</div>
+
+<div class='col'>
+  <br/>
+
+<h2>Obiettivi di indagine &amp; ricerca</h2>
+
+<p>Dopo aver analizzato i post degli utenti sui social media e le recensioni lasciate nella sezione
+  Servizio Clienti del sito, ho ritenuto opportuno sottoporre un questionario di 16 domande ad un target di 54 donne
+  tra i 18-48 anni per comprendere le loro abitudini di acquisto e l'uso dell'activewear, in particolare per comprendere:
+<ul class='b'>
+  <li> Se da un punto di vista etico la consumatrice è più sensibile all’impatto sociale o a quello ambientale della fashion industry</li>
+<li> Che caratteristiche cerca in un prodotto activewear e qual è il criterio di scelta</li>
+<li> In che contesti usa l’outfit</li>
+<li> Che cosa renderebbe migliore e quindi più desiderabile un paio di leggings </li>
+<li> Cosa acquista più spesso</li>
+<li> Dove acquista solitamente</li>
+<li> Quanto spende per un paio di leggings</li>
+<li> Quale è il brand preferito e perchè</li>
+</ul>
+</p>
+</div>
+
+</div>
+<div class='col'>
+<img src='immagini/gf-survey.svg' alt="" class='img-fluid'/>
+</div>
+</div>
+
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+<h1>PERSONAS</h1>
+
+<p>I dati emersi dal questionario mi hannp permesso di capire in quanti gruppi è possibile suddividere il target
+  e come esso interagisce con il sito, ho quindi definito 3 Personas.</p>
+</div>
+</div>
+
+<div class='col'>
+<img src='immagini/gf-personas.png' alt="personas" class='img-fluid'/>
+</div>
+
+
+
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+<h1>VIAGGIO UTENTE MIGLIORATO</h1>
+<p>I pain point emersi durante l'esperienza di navigazione di ciascuna persona hanno guidato
+  a un secondo user journey per ognuna con le opportunità di miglioramento emerse.</p>
+</div>
+</div>
+
+<div class='col'>
+<img src='immagini/gf-journey.png' alt="user journey" class='img-fluid'/>
+</div>
+</div>
+</section>
+
+<section id='hero2'>
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+<h1>DEFINIZIONE DEI PROBLEMI</h1>
+<h2> per risolvere quelli giusti</h2>
+</br>
+<p>I principali problemi da risolvere per ottimizzare l'esperienza d'acquisto sono:
+  <ul class='b'>
+    <li> Manca la pagina "Sconti", ma alcuni articoli sono scontati</li>
+      <li> Manca la pagina dedicata ai "Bestseller"</li>
+      <li> Gli articoli out of stock non sono segnalati in anticipo</li>
+    <li> No Wishlist</li>
+    <li> No Live Chat</li>
+  </ul>
+</div>
+</section>
+
+<section>
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+<h1>FLUSSO UTENTE</h1>
+<p>Ciascuna Persona ha <strong>bisogni, motivazioni, comportamenti e obiettivi diversi</strong> quindi ognuna
+  può seguire <strong>differenti user flow.</strong></p>
+</div>
+</div>
+<div class='col'>
+<img src='immagini/gf-flow.svg' alt="user flow" class='img-fluid'/>
+</div>
+
+
+
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+<h1>IA &amp; SITEMAP</h1>
+<p>I problemi e pain point emersi tramite analisi e user journey hanno portato alla
+  modifica della sitemap attuale.</p>
+</div>
+</div>
+<div class='col'>
+<img src='immagini/gf-sitemap.svg' alt="" class='img-fluid' />
+</div>
+</div>
+
+
+
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+<h1>WIREFRAMING</h1>
+<h2>(Sketching &amp; Digital tool)</h2>
+<p>Sono stati realizzati degli sketch per impostare la struttura delle pagine e la gerarchia dei contenuti
+  in versione desktop e mobile.
+  Successivamente ho sviluppato dei wireframe hi-fi seguendo il flusso:<br>
+Selezione prodotto &nbsp; <b>&gt;</b> &nbsp; Aggiungi al carrello &nbsp; <b>&gt;</b> &nbsp; Checkout,
+disegnando le seguenti pagine:
+<ul>
+  <li> Homepage</li>
+  <li> Scelta categoria</li>
+  <li> Pagina categoria (anteprima prodotto)</li>
+  <li> Dettagli prodotto</li>
+  <li> Aggiungi a carrello</li>
+  <li> Processo checkout (in 4 step)</li>
+</ul>
+</p>
+</div>
+<div class='col'>
+<img src='immagini/wireframe-gf.png' alt="" class='img-fluid'/>
+</div>
+</section>
+
+<section id='hero2'>
+  <div class='container'>
+    <div class='row align-items-center'>
+  <div class='col'>
+
+<img src='immagini/gf-full-wire.svg' alt="" class='img-fluid'/>
+</section>
+
+<section>
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+<h1>DESIGN SYSTEM</h1>
+<p><b>&#42;</b> L'interfaccia desktop differisce dalla versione mobile in alcune parti: componenti, stato dei pulsanti,
+  procedura di pagamento.
+<br>
+<p><b>UI Palette</b><br>
+  La palette monocromatica mantiene la gamma tonale del sito originale e richiama le sfumature della pelle.
+  Tutte le combinazioni colore e background sono conformi agli standard di accessibilità WCAG AAA / WCAG AA.
+<br>
+<p><b>Icone e Figure</b><br>
+Tutte le icone rispettano la dimensione target, invece le figure che accompagnano le sezioni del sito
+non sono indipendenti quindi non possono essere utilizzate separatamente.
+  <br>
+  <p><b>Font</b><br>
+    Il prototipo utilizza il "Roboto" essendo molto simile alla famiglia di caratteri "Akzidenz-grotesk"
+    utilizzata nel sito originale. Le dimensioni dei testi sono quelle consigliate in Google Material Design.</p>
+</div>
+
+
+<img src='immagini/gf-palette-icon-ita.svg' alt='icons' class='img-fluid'/>
+</section>
+
+
+
+
+<section id='hero2'>
+<div class='container'>
+  <div class='row align-items-center'>
+    <div class='col1'>
+<h1>
+<span>PROTOTIPO</span> <span class='dash'>&#124;</span> <span class="role">Desktop </span>
+</h1>
+<br/>
+</div>
+<div class='col'>
+<video width="98%"playsinline autoplay muted loop>
+    <source src="video/gf-desktop-video.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded video.
+</video>
+</div>
+</div>
+</div>
+
+
+<div class='container'>
+  <div class='row align-items-center'>
+    <div class='col1'>
+      <h1>
+      <span>PROTOTIPO</span> <span class='dash'>&#124;</span> <span class="role">Mobile </span>
+      </h1>
+      <br/>
+</div>
+<div class='col'>
+<video  width="50%" playsinline autoplay muted loop>
+    <source src="video/gf-video.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded video.
+</video>
+</div>
+
+</div>
+</div>
+</section>
+
+<section>
+<div class='container'>
+  <div class='row align-items-center'>
+    <div class='col1'>
+<h1>TEST CON GLI UTENTI</h1>
+<p>Ho impostato 2 script test con 2 task ciascuno per valutare l'usabilità dell'interfaccia desktop e mobile,
+  tenendo conto degli user flow e dei pain point riscontrati in fase di Discovery.
+<br>
+Entrambi i test sono non moderati poiché si tratta di un sito di e-commerce relativamente facile da navigare.<br/>
+<br/>
+TEST INTERFACCIA DESKTOP <br/>
+1 test suddiviso in 2 task per semplificare il flusso e identificare meglio eventuali punti di frizione:
+<ol>
+  <li> Scegli un prodotto e mettilo nella "Bag".</li>
+  <li> Completa il tuo acquisto.
+  </ol></p>
+<p>Tempo stabilito per ciascuno.</p>
+<p>TEST INTERFACCIA MOBILE<br/>
+1 test con 2 tasks in cui viene testata la facilità di accesso ad informazioni specifiche.</p>
+<br/>
+
+</div>
+
+<div class='col'>
+
+<p>METRICHE<br/>
+  <ul>
+  <li> 1° click </li>
+  <li> Durata task </li>
+  <li> Tempo medio per screen </li>
+  <li> Heatmap </li>
+</ul></p>
+
+<p>TARGET<br/>
+Ho testato entrambe le versioni con 5 donne tra i 25 e i 43 anni che rispecchiano le Persona precedentemente identificate:
+<ol>
+  <li> abituate allo shopping online;</li>
+  <li> proficienza dei device medio&#47;alta. </li>
+</ol>
+</p>
+</div>
+
+<hr class="horizontal">
+
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+<p>OBIETTIVI<br/>
+Alcuni flussi potevano risultare meno fluidi / intuitivi nella versione mobile e quindi dovevano essere esaminati.
+Lo scopo dei test consisteva nel valutare se i pain point fossero stati effettivamente risolti o ridotti,
+in particolare per determinare se il target può facilmente:</p>
+</div>
+
+
+<div class='col'>
+<p>
+  <ul>
+<li> navigare tra le categorie per trovare rapidamente un prodotto specifico;</li>
+<li> completare la procedura di pagamento;</li>
+<li> trovare articoli scontati;</li>
+<li> contattare il Servizio Clienti.</li>
+</ul>
+</p>
+</div>
+</div>
+</div>
+<hr class="horizontal">
+
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+<h2>
+TEST SCRITTO 1 <span class="dash"> Interfaccia Desktop </span>
+</h1>
+<p><b>Metodo</b><br/>
+Task chiuso, diretto, non moderato.<br/>
+</p>
+
+<br/>
+
+
+<p><b>TASK SCENARIO A</b><br/>
+"Vuoi acquistare un paio di leggings e sei orientato verso un modello specifico.<br/>
+Naviga attraverso il sito e <em>Aggiungi alla Bag</em> il seguente articolo:
+  <ul>
+    <li> “Compressive high-rise legging _ Plum”</li>
+  </ul>
+  </p>
+  <br/>
+
+  <p><b>TASK SCENARIO B</b><br/>
+  "Hai già inserito alcuni prodotti nella
+  <em>Bag</em> e ora vuoi acquistarli.<br/>
+  Vai alla <em>Bag</em> e completa il checkout tramite <em>Login</em>."</p>
+<br/>
+
+  <p>RISULTATI<br/>
+  i tester sono stati in grado di completare le attività senza problemi.
+  Il tasso di errore è molto basso, a causa dei colori utilizzati per le anteprime dei prodotti molto simili a quello da scegliere
+  (viola - lilla - prugna). Si tratta di un errore non critico che quindi non ha influito sul completamento dei task,
+  ma ha solo ritardato l'efficienza nel suo completamento.</p>
+</div>
+
+<div class='col'>
+<img src='immagini/gf-desktop-test.svg' alt='user test desktop' class='img-fluid'/>
+</div>
+
+</div>
+</div>
+
+<hr class="horizontal">
+
+<div class='container'>
+  <div class='row align-items-center'>
+    <div class='col1'>
+<h2>
+TEST SCRITTO 2 <span class="dash"> Interfaccia Mobile </span>
+</h2>
+<p>Per la versione mobile, ho impostato un test per valutare la Ricercabilità di alcune informazioni.
+  Non ho optato per un 1° Click Test perché per trovare le informazioni richieste nei task è necessario
+  fare un percorso e quindi più tap.</p>
+
+<p><b>Method</b><br/>
+Task aperto, non moderato. </p>
+<br/>
+
+<p><b>TASK SCENARIO A</b><br/>
+"Hai un budget limitato quindi vuoi acquistare un prodotto in saldo.<br/>
+Dove andresti/cliccheresti per vedere se nel sito sono disponibili degli sconti?"
+  </p>
+
+  <p>PERCORSO SCELTO A<br/>
+  4 tester su 5 ha fatto il primo tap sulla CTA <em>Shop now</em> e hanno fatto scorrere la home per scoprire le opzioni.
+   1 tester ha cliccato direttamente sul menu ma lo ha chiuso per tornare alla home e solo dopo averla scrollata
+   ha cliccato su <em>Special price</em>.</p>
+
+   <p>OBIETTIVI A<br/>
+  Valutare se alcune informazioni sono facilmente reperibili, capire come si comporta spontaneamente l'utente e
+  come interagisce con il prodotto.</p>
+
+   <p>RISULTATI A<br/>
+     Il compito prevedeva che i tester scegliessero liberamente un percorso per trovare articoli scontati.
+Hanno effettuato il tap sulla slider <em>Up to 50% off</em>, un percorso possibile e corretto ma che non mi aspettavo.
+Essendo evidenziata nella home, la sezione ha fatto sì che gli utenti scegliessero quel percorso, il più veloce,
+invece di andare direttamente all'apposita sezione del menu.</p>
+
+<br/>
+
+
+  <p><b>TASK SCENARIO B</b><br/>
+  "Hai bisogno di parlare rapidamente con il Servizio Clienti riguardo un dubbio che hai su un prodotto.<br/>
+    Dove andresti/cliccheresti se hai bisogno di contattare rapidamente il Servizio Clienti?"</p>
+
+
+
+  <p>PERCORSO SCELTO B<br/>
+  4 tester su 5 hanno aperto la navbar.<br/>
+  3 hanno scelto <em>Help & Contact</em> e 1 l'icona <em>Chat</em>.<br/>
+  1 tester è andato direttamente al footer e cliccato l'opzione <em>Help & Contact</em>.</p>
+
+  <p>OBIETTIVO B<br/>
+    Scoprire se gli utenti trovano l'icona <em>Live Chat</em>.</p>
+
+
+  <p>RISULTATI B<br/>
+    I tester hanno trovato rapidamente il modo di contattare il <em>Customer Service</em> ma solo 1 ha fatto ricorso alla
+     <em>Live Chat</em>.
+  L'icona non è immediatamente riconoscibile probabilmente per il suo posizionamento e&#47;o colore. </p>
+
+  <p>FEEDBACK B<br/>
+  Spostare la <em>Live Chat</em> dalla sezione <em>Newsletter</em> o sostiture la grafica con il testo "Live Chat".</p>
+
+
+
+</div>
+<div class='col'>
+
+<img src='immagini/gf-mobile-test.svg' alt='user test mobile' class='img-fluid'/>
+</div>
+
+
+</div>
+</div>
+</section>
+
+
+<section id='hero2'>
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+<h1>INTERFACCIA MOBILE </h1>
+
+</div>
+<img src='immagini/gf-mobile-ui-ita.svg' alt='Mobile Interface' class='img-fluid'/>
+</div>
+
+     <!-- End Section Girlfriend -->
+
+
+<section id='next-project'> <!--Next project-->
+    <div class='container'>
+      <div class='row align-items-center'>
+        <div class='col'>
+  <h2>
+  <a id='mybtn-side'href='baliyoga-ita.html'>&#9664;&nbsp;</a>&nbsp;PROSSIMO PROGETTO&nbsp;<span class='dash'>&colon;</span>
+<span class="role">Nyu&sdot;me</span> <a id='mybtn-side' href='nyume-ita.html'>&#9654;</a>
+</h2>
+</div>
+</div>
+</div>
+</section>
+
+
+
+</section>
+
+<section id='footer'> <!--Footer-->
+    <div class='container'>
+      <div class='row align-items-center'>
+        <div class='col'>
+  <p>
+    &copy;2021 Jasmine-Exavier Webster&nbsp;&nbsp;&nbsp;&nbsp;<span class='dash4'>&#124;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class='link-footer' href='https://www.linkedin.com/in/jasminewebster/' target='_blank'>
+        Linkedin&nbsp;&nbsp;</a>
+
+      &nbsp;&nbsp;<span class='dash4'>&#124;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class='link-footer' href='https://jasminewebster.wixsite.com/jasminewebster'target='_blank'>
+        Graphic Design&nbsp;&nbsp;<a>
+</p>
+</div>
+</div>
+</div>
+</section> <!--End Footer-->
+
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#9650;</button>
+
+
+
+<script> <!-- Back to top -->
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script> <!--End Back to top button-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jasmine Webster </title>
+    <!-- CSS only -->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+ <link href="./style.css" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Inconsolata&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+
+      <a class="navbar-brand" href="index-ita.html">
+  <img src='immagini/mylogo.svg' class='logo' alt='logo' width='100px'/></a>
+
+
+<!-- Menu toggler -->
+       <div id="myNav" class="overlay" >
+
+     <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+     <div class="overlay-content">
+       <a href="about-ita.html">CHI SONO</a>
+       <br/>
+       <a href="baliyoga-ita.html">PORTFOLIO</a>
+       <br/>
+       <a href="contact-ita.html">CONTATTI</a>
+       <br/>
+         <a class='language' href="index-ita.html">ITA</a> <span class='dash6'>&#124;</span> <a class='language' href="index.html">ENG</a>
+     </div>
+   </div>
+
+
+   <span id='burger'style="font-size:20px;cursor:pointer" onclick="openNav()">menu &#9776; </span>
+
+   <script>
+   function openNav() {
+     document.getElementById("myNav").style.width = "70%";
+   }
+
+   function closeNav() {
+     document.getElementById("myNav").style.width = "0%";
+   }
+   </script> <!-- End Menu toggler -->
+
+
+  </nav>
+  <!-- End Navbar -->
+
+   <section id='hero3'>
+   <div class='container'>
+     <div class='row align-items-center'>
+     <div class='col1'>
+
+      <h1>
+      <span>BALI YOGA</span> <span class='dash'>&#124;</span> <span class="role2"> Desktop, Mobile, App </span>
+   </h1>
+
+ <p>L'azienda è un centro yoga che offre lezioni con vari stili e livelli.</p>
+ <p>Servizi e vantaggi:
+
+ <ul>
+   <li> Classi individuali</li>
+   <li> Corsi professionali </li>
+   <li> Corsi aziendali</li>
+   <li> Workshop</li>
+   <li> Lezione di prova gratuita</li>
+   <li> 2 tipi di lezioni: in palestra e interattive</li>
+   <li> 14 stili yoga</li>
+   <li> 3 livelli: base, intermedio, avanzato</li>
+   <li> 25 insegnanti</li>
+ </ul></p>
+</div>
+<div class='col'>
+<img src='immagini/bali-all.svg' alt='schermata prototipo baliyoga' class='img-fluid'/>
+</div>
+
+
+
+
+<div class='col1'>
+      <p><b>Ruolo:</b> UX e UI design, ho coperto tutte le fasi progettuali<br/>
+        dalla mappatura del problema al disegno dell'interfaccia utente.<br/>
+</p>
+<p><b>Durata:</b> 5 settimane.</p>
+</div>
+
+</section>
+
+
+
+<section style='#f8f9fa'>
+  <div class='container'>
+    <div class='row align-items-center'>
+    <div class='col1'>
+<h1>Il problema riguarda i Corsi Individuali</h1>
+<p>
+  <ol>
+    <li> <b>Non è chiaro che l'azienda offre anche questa tipologia di corsi.</b><br/>
+       Perchè non sono menzionati nella home che pubblicizza solo i corsi per diventare professionisti.</li>
+       <br/>
+<li> Inoltre <b>le informazioni relative ai corsi individuali sono frammentate in varie pagine</b>
+  impedendo all'utente di avere una panoramica e facendogli iniziare / interrompere molti flow.</li>
+  <br/>
+<li> <b>L'obiettivo primario dell'azienda non è chiaro</b>.<br/>
+  Tutti i pulsanti sono CTA primarie quindi l'utente non è guidato a seguire un percorso intenzionale.</li>
+</ol> </p>
+
+
+</div>
+</div>
+</section>
+<section id='hero3'>
+<div class='container'>
+  <div class='row align-items-center'>
+  <div class='col1'>
+    <br/>
+    <h2>Qual è lo scopo del progetto? </h2>
+    <p>Poichè l'azienda punta sull'acquisto e prenotazione online dei servizi, l'obiettivo è
+      <b>ottimizzare la user experience in tutte le pagine necessarie all'utente per usufruire del corso individuale</b>,<br/>
+      partendo dalla richiesta della prova gratuita, l'acquisto di un pacchetto fino alla prenotazione su calendario.</p>
+
+      </div>
+
+      <div class='col'>
+        <br/>
+      <h2>E perchè? </h2>
+    <p>Rendere immediatamente chiaro all'utente che l'azienda offre anche corsi individuali e facilitare la loro iscrizione fornendo:
+       informazioni chiare e percorsi di acquisto e prenotazione più diretti e intuitivi <b>permette all'azienda
+         di ottenere un target più ampio</b> rispetto a quello che può raggiungere pubblicizzando solo i corsi di training e corporate.</p>
+
+</div>
+</div>
+</section>
+
+<section style='#f8f9fa'>
+  <div class='container'>
+    <div class='row align-items-center'>
+    <div class='col1'>
+   <h1>ANALISI DEL BRAND</h1>
+   <p>Tramite una valutazione euristica generale ho individuato i problemi del sito. <br/>
+      Ho successivamente generato la sitemap as is, seguita da un'analisi
+      delle pagine e flussi relativi ai corsi individuali:
+     <ul>
+       <li> I 2 percorsi di "Prenota lezione": per il nuovo utente (prova gratuita) e per l'utente iscritto</li>
+       <li> Il percorso "Acquista lezione" </li>
+       <li> Pagina Tariffe</li>
+       <li> Modulo di Registrazione che si apre in fase di checkout</li>
+  </ul>
+</p>
+     </div>
+
+
+
+     <img src='immagini/bali-heuristic-ita.svg' alt="10 Euristiche" class='img-fluid'/>
+
+   <img src='immagini/bali-sitemap-attuale.svg' alt="Sitemap originale" class='img-fluid'/>
+<img src='immagini/bali-pages-analysis.jpg' alt="Alcune pagine analizzate" class='img-fluid'/>
+
+ </div>
+
+   <div class='container'>
+     <div class='row align-items-center'>
+ <div class='col1'>
+   <h1>ANALISI COMPETITIVA </h1>
+     <p>Bali Yoga è considerato uno dei migliori centri yoga di Milano sia dalla stampa che dai frequentatori;
+       la conferma è data dalle molte classifiche disponibili online.<br/>
+     I competitor diretti sono <b>5 brand attivi a Milano</b>,
+     identificati perchè tendono a comparire nelle stesse classifiche:<br/>
+     <br/>
+     Spazio Garibaldi 77, Casa Yoga, City Zen, Rama Yoga e Nalu Yoga</p>
+
+     <p>Elementi in comune:
+       <ul>
+         <li> possibilità di lezioni in streaming </li>
+          <li> anche corsi di formazione </li>
+           <li> prenotazione online </li>
+         </ul></p>
+        <p> Differenze:
+           <ul>
+             <li>non tutti offrono la prova gratuita</li>
+              <li> alcuni hanno un servizio extra </li>
+          </ul>
+        </p>
+        <br/>
+        <br/>
+    <h2> Metodi di Analisi:</h2>
+    <p>  <ul class='b'>
+        <li> FEATURES INVENTORY<br/>
+      Per comparare le funzionalità dei siti competitor ma anche gli elementi visibili al 1° livello
+      della navbar e fare un rapido confronto.<br/>
+      <br/>
+      SCOPO: stabilire a quali feature e categorie dare priorità e identificare come gli altri brand
+      organizzano i gruppi di informazioni.</li>
+<br/>
+      <li> TASK ANALYSIS<br/>
+        Per identificare i flow che l'utente segue nei siti competitor per raggiungere il suo obiettivo.<br/>
+<br/>
+SCOPO: capire se la concorrenza gestisce meglio il percorso di acquisto e vedere i punti decisionali critici dell'utente
+durante il processo.</li>
+</ul>
+</p>
+<br/>
+
+<h2>Risultati</h2>
+  <p>
+  Il checkout Bali Yoga risulta fluido per l'utente esperto, ma <strong>le card cliccabili</strong>
+  (@home, marghera 43, etc.)
+  <strong> rischiano di distrarre o mettere in confusione l'utente meno esperto o peggio di farlo uscire dal processo.</strong><br/>
+  Tutte le aziende prese in esame usano il CRM Mindbody quindi il flow è identico, cambia solo il nome delle CTA.<br/>
+  Punto a favore è che il checkout permette allo user di modificare facilmente l'ordine (numero di articoli / cancellare / continuare lo shopping).</p>
+</div>
+
+<div class='col'>
+<img src='immagini/bali-competitors.svg' alt="Survey" class='img-fluid'/>
+</div>
+
+
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+  <br/>
+<h2>Ipotesi da validare</h2>
+<p>Ipotizzo che <b>la struttura attuale dei corsi individuali rischia di far uscire l'utente dal sito </b>perchè:<br/>
+<ul>
+  <li> non è facile capire come funzionano in quanto le info importanti sono frammentate in più pagine;</li>
+  <li> la richiesta della prova gratuita avviene in più di 8 click;</li>
+  <li> la pagina tariffe non offre una panoramica dei tipi di pacchetti e richiede un eccessivo scroll verticale soprattutto nel mobile; </li>
+  <li> il checkout ha elementi di distrazione per l'utente meno esperto.</li>
+</ul>
+</p>
+
+</div>
+
+<!-- forse eliminare
+<div class='col'>
+<img src='immagini/bali-ipotesis.svg' alt="Survey" class='img-fluid'/>
+</div>
+-->
+</div>
+</div>
+
+   <div class='container'>
+     <div class='row align-items-center'>
+   <div class='col1'>
+   <h1>RICERCA UTENTE</h1>
+
+   <p>L'audience ha vari gruppi di età, <strong>approssimativamente tra 20 - 65 anni</strong> e pratica la disciplina per combattere lo stress,
+     tenersi in forma in modo sano, riequilibrare mente e spirito.<br/>
+La definizione del target si basa sui follower e post pubblicati nel profilo Instagram aziendale.</p>
+
+    <p>
+    Ho sottoposto un sondaggio a 70 persone tra 18 - 60 anni con il prerequisito che seguano o abbiano
+    seguito un corso di fitness o yoga in una palestra.<br/>
+    Tramite i dati raccolti ho definito 4 Persona.
+   </p>
+
+   </div>
+
+   <div class='col'>
+   <img src='immagini/bali-survey.svg' alt="Survey" class='img-fluid'/>
+ </div>
+</section>
+<!-- INIZIO IMMAGINE DATA COLLECTED
+ </div>
+   <div class='col'>
+   <img src='immagini/bali-survey-data.svg' alt="Survey" class='img-fluid'/>
+
+</div>
+FINE IMMAGINE DATA COLLECTED-->
+
+
+<!-- INIZIO COLLECTED DATA-->
+<section id='hero3'>
+<div class='container'>
+  <div class='row align-items-center'>
+
+    <div class='col'>
+      <br/>
+     <p>DATI OTTENUTI</p>
+</div>
+
+
+
+<div class='container'>
+<div class='row'>
+
+<div class="column-twin">
+<p>
+<b>  L'<font size="+2">86%</font> degli utenti preferisce iscriversi alle classi in palestra piuttosto che online.</b><br/>
+
+Ci può essere un comportamento &#47; motivazione diversa tra l'acquisto di un prodotto rispetto a un servizio.
+ L'utente che compra abitualmente un prodotto online potrebbe essere riluttante riguardo a un servizio. Quindi:
+ <ul>
+   <li> Rendere il processo di pagamento più accessibile (es. aggiungendo altre opzioni di pagamento)</li>
+   <li> Rendere i moduli form più intuitivi.</li>
+ </ul>
+     </p>
+<p>
+  <b>Per il<font size="+2"> 43%</font> il prezzo è motivo di scelta.</b><br/>
+  Il sito rispetto ai competitor offre ampia scelta di pacchetti.<br/>
+  Provare a metterli in evidenza e rendere la pagina più usabile specialmente nella versione mobile (troppo scroll verticale).</p>
+
+  <p>
+  <b>Solo il <font size="+2">12%</font> è infastidito da troppi pulsanti.</b><br/>
+  (Contro le mie aspettative.) Sicuramente i "3 semplici step per il free trial" sono da rivedere,
+  ma probabilmente le CTA “Acquista” e “Prenota” nella header potrebbero rimanere bottoni.
+</p>
+</div>
+
+<div class="column-twin">
+
+<p>
+  <b>Solo il <font size="+2">14%</font> dei partecipanti dichiara di prestare attenzione agli aspetti visivi </b>
+  (es. i Video), comparato al <b><font size="+2">71%</font> che dà priorità alla descrizione approfondita dei corsi.</b><br/>
+  Le categorie potrebbero essere meglio raggruppate (sitemap), i testi di alcune sezioni più leggibili
+  (alcuni hanno dimensione 8pt) e gli elementi interattivi dovrebbero essere differenziati da quelli statici
+  (un contro emerso anche durante l'analisi euristica).</p>
+
+<p>
+  <b>I servizi aggiuntivi che gli utenti vorrebbero (bar) riguardano la location non il sito.</b><br/>
+  Eventualmente il cliente che compra un pacchetto lezioni potrebbe essere omaggiato con uno snack brandizzato (1 acquisto = 1 snack)
+  da offrire quando si presenta in palestra e menzionare il "regalo" nella pagina d'acquisto.</p>
+</div>
+
+
+
+
+</div>
+
+</div>
+</div>
+</section>
+<!-- FINE COLLECTED DATA-->
+
+
+<section style='#f8f9fa'>
+  <div class='container'>
+    <div class='row align-items-center'>
+   <div class='col'>
+     <h1>4 PERSONAS</h1>
+   <img src='immagini/bali-personas.svg' alt="Personas" class='img-fluid'/>
+ </div>
+
+<!-- VECCHIO DIV 14 PUNTI
+   <div class='container'>
+     <div class='row align-items-center'>
+   <div class='col1'>
+   <h1>14 Opportunities</h1>
+  <h2>Surfaced by Analysis and User Journeys</h2>
+   <p>
+     <br/>
+     <ol>
+       <li> <strong> From the homepage are not immediately clear all the services offered. &#8594; </strong>
+         Add a homepage section for each service, giving more emphasis to individual courses
+         (possibility to reach a wider audience than training and company courses).</li><br/>
+         <li><strong> "Book Trial Lesson" has too many buttons and the user flow is confusing and interrupted.&#8594; </strong>
+         Reduce clicks and make flow more linear.</li><br/>
+   <li> <strong> The "Calendar" could be improved. &#8594; </strong>
+   Optimize the Calendar view and implement filters.</li><br/>
+   <li> <strong> The "Princing" page does not provide an immediate overview of all packages available. &#8594; </strong>
+   Improve package organization to facilitate an overview at a glance.</li><br/>
+   <li> <strong> The "Lessons" page has many CTAs: links and buttons. &#8594; </strong>
+   Determine which flow to prioritize and make other CTAs secondary or alternatively see to merge some pages.</li><br/>
+   <li> <strong> "@Home" has got 6 primary buttons. &#8594; </strong>
+     Reduce the path "Book Trial Lesson" to 1 button and delete one of the two flows for "Buy" because
+     they lead to the same result.</li><br/>
+   <li> <strong> The app download is inside a section. &#8594; </strong>
+   Provide a link or icon in the footer as well.</li><br/>
+ </ol>
+ </div>
+
+ <div class='col'>
+
+   <ol start='8'>
+    <li> <strong> Where we are (it is called "Studios") is in Who We Are. &#8594; </strong>
+   Optionally leave it as a sub-category in the menu, but give evidence in the footer via icon.</li><br/>
+   <li> <strong> "Yoga Styles" is inside Who We Are. &#8594; </strong>
+   Group pages more intuitively for the user.</li><br/>
+   <li> <strong> "Yoga Styles" has no CTAs. &#8594; </strong>
+   Link it to "Calendar" or "Pricing" or alternatively turn it into a section of another page.</li><br/>
+   <li> <strong> "Checkout" has a different graphic interface. &#8594; </strong>
+   Standardize the UI.</li><br/>
+   <li> <strong> "Checkout" has various clickable cards that risk interrupting the purchase process. &#8594; </strong>
+   Delete the cards because they concern the scheduled lessons so it is more useful to leave them only in Calendar.</li><br/>
+   <li> <strong> "Registration" form is way too long. &#8594; </strong>
+     Review the required fields and make the full Regulation available by click.</li><br/>
+   <li> <strong> "Payment Methods" offer few options. &#8594; </strong>
+  Add fast payment and other options too.</li><br/>
+</ol></p>
+
+    <p>&emsp;&emsp;These opportunities have led to a user journey improved for each Persona.</p>
+ </div>
+</div>
+FINE VECCHIO DIV 14 PUNTI-->
+
+
+<!-- INIZIO COLONNA 14 PUNTI-->
+<div class='container'>
+  <div class='row align-items-center'>
+
+    <div class='col'>
+     <h1>14 OPPORTUNITÀ</h1>
+     <h2>Emerse da analisi e user journey</h2>
+</div>
+
+
+
+<div class='container'>
+<div class='row'>
+
+<div class="column-twin">
+
+  <p>
+    <br/>
+    <ol>
+      <li> <strong> Dalla home non sono immediatamente chiari tutti i servizi offerti. &#8594; </strong>
+        Aggiungere una sezione in homepage per ogni servizio, dando maggiore enfasi ai corsi individuali
+        (possibilità di raggiungere un pubblico più ampio rispetto ai corsi di formazione e aziendali).</li><br/>
+        <li><strong> "Prenota lezione di prova" ha troppi pulsanti e il flusso dell'utente è confuso e interrotto.&#8594; </strong>
+      Ridurre i click e rendere i flow più lineari.</li><br/>
+  <li> <strong> Il "Calendario" potrebbe essere migliorato. &#8594; </strong>
+  Ottimizzare la visualizzazione del calendario e implementare i filtri.</li><br/>
+  <li> <strong> La pagina "Prezzi" non fornisce una panoramica immediata di tutti i pacchetti disponibili. &#8594; </strong>
+  Riorganizzare i pacchetti per facilitare la loro visione a colpo d'occhio.</li><br/>
+  <li> <strong> La pagina "Lezioni" ha troppe CTA: link e pulsanti. &#8594; </strong>
+  Stabilire a quale flow dare precedenza e rendere secondarie le altre CTA o in alternativa considerare di accorpare alcune pagine.</li><br/>
+  <li> <strong> "@Home" ha 6 pulsanti principali. &#8594; </strong>
+    Ridurre il percorso "Prenota lezione di prova" a 1 bottone ed eliminare uno dei due bottoni di acquisto perchè conducono
+    allo stesso identico risultato.</li><br/>
+  <li> <strong> Il download dell'app è dentro una sezione. &#8594; </strong>
+  >Prevedere un link o icona anche nel footer.</li><br/>
+  </ol>
+</p>
+
+</div>
+
+<div class="column-twin">
+
+  <p>
+    <ol start='8'>
+      <br/>
+   <li> <strong> "Dove siamo" (si chiama "I nostri studi") è dentro "Chi siamo". &#8594; </strong>
+ Si potrebbe mantenere come sottocategoria del menu, ma dare maggiore evidenza tramite icona nel footer.</li><br/>
+  <li> <strong> "Stili yoga" è dentro "Chi siamo". &#8594; </strong>
+    Raggruppare le pagine in modo che risulti più logico e coerente per l'utente.</li><br/>
+  <li> <strong> "Stili yoga" non ha CTA. &#8594; </strong>
+  Linkare al "Calendario" o "Tariffe" o in alternativa renderla sezione di un'altra pagina.</li><br/>
+  <li> <strong> "Checkout" ha un'interfaccia grafica diversa. &#8594; </strong>
+  Uniformare la UI.</li><br/>
+  <li> <strong> "Checkout" ha varie card cliccabili che rischiano di interrompere il flusso di acquisto. &#8594; </strong>
+  Eliminare le card perchè riguardano le lezioni in programma quindi è più utile lasciarle solo nel Calendario.</li><br/>
+  <li> <strong> La form di "Registrazione" è troppo lunga. &#8594; </strong>
+    Rivedere i campi obbligatori e rendere consultabile la form completa tramite click.</li><br/>
+  <li> <strong> "Metodi di pagamento" offre opzioni limitate. &#8594; </strong>
+  Aggiungere pagamento veloce e altri metodi.</li><br/>
+  </ol></p>
+
+   <p>&emsp;&emsp;Queste opportunità hanno condotto a un journey migliorato per ogni Persona.</p>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+</div>
+
+
+<!-- FINE COLONNA 14 PUNTI-->
+
+
+
+
+
+
+   <div class='col1'>
+   <h1>2° VIAGGIO UTENTE</h1>
+   <h2>Con i pain point eliminati o ridotti</h2>
+   <p>Per ogni Persona era stato costruito un primo user journey nel sito as is.<br/>
+      Gli atriti emersi dall'esperienza di navigazione hanno guidato a
+      un secondo user journey con le opportunità di miglioramento emerse.</p>
+   </div>
+
+   <img src='immagini/bali-journeys.svg' alt="User journey" class='img-fluid'/>
+
+
+
+   <div class='col1'>
+   <h1>ARCHITETTURA DELL'INFORMAZIONE</h1>
+   <h2>La nuova sitemap</h2>
+   <p>Analisi e user journey hanno condotto a una modificazione della sitemap attuale.</p>
+
+ </div>
+<div class='col'>
+   <img src='immagini/bali-newsitemap-ita.svg' alt="sitemap"class='img-fluid'/>
+</div>
+
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+   <h1>FLUSSO UTENTE</h1>
+   <h2>Attraverso i wireflow</h2>
+
+   <p>Per ogni device (desktop, mobile, app) ho sviluppato dei wireflow. <br/>
+     <br/>
+     DESKTOP &amp; MOBILE
+    <ul class='b'>
+      <li> Richiesta di 1 lezione di prova</li>
+      <li> Prenotazione lezione su calendario</li>
+      <li> Ottimizzazione dei filtri</li>
+      <li> Acquisto di un pacchetto</li>
+      </ul>
+      APP</p>
+    <p>  Stessi flussi plus:
+     <ul  class='b'>
+      <li> Dark &#47; Light mode</li>
+       </ul>
+     </p>
+     <p>Seguiti dai wireframe cliccabili.
+</p>
+   </div>
+
+<div class='col'>
+   <img src='immagini/bali-wireflow.png' alt="Bali Wireflow" class='img-fluid'/>
+ </div>
+</section>
+
+ <section id='hero3'>
+ <div class='container'>
+   <div class='row align-items-center'>
+
+     <div class='col'>
+   <img src='immagini/bali-wireframe.svg' alt="Bali Wireframes" class='img-fluid'/>
+
+</div>
+</div>
+
+</section>
+
+
+
+
+
+<!-- Ui start-->
+<div class='container'>
+  <div class='row align-items-center'>
+     <div class='col1'>
+  <h1>LOGO REDESIGN</h1>
+  <p>Il fiore del logotipo originale è stato mantenuto diventando un loto di 7 petali con sopra un cerchio
+    rappresentante i chakra.<br/>
+           Il font "Thasadith - Bold" riprende le forme allungate del petalo:</p>
+
+   <div id='thasadith'><strong>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</strong></div>
+   <br/>
+   <p>Il logo attuale è arancione, un colore largamente usato nel food environment; la nuova palette è il risultato
+    del sondaggio sottoposto a un gruppo di user in fase di ricerca:<br/>
+   <b>INDACO</b> - 6° Chakra (terzo occhio)<br/>
+  Simbolo di spiritualità e risveglio interiore, rappresenta il rapporto con le nostre capacità interiori.<br/>
+   <b>VERDE</b> - 4° Chackra (cuore)<br/>
+   Il colore dell'armonia e della natura: simboleggia equilibrio, pace e rinnovamento.</p>
+
+   </div>
+
+   <div class='col'>
+   <img src='immagini/bali-logo-ok.svg' alt='schermata logo baliyoga' class='img-fluid'/>
+   </div>
+
+   <!-- FINE LOGO DESIGN-->
+
+
+
+   <div class='col1'>
+   <h1>UI KIT</h1>
+   <p>Il colore primario è indaco, il secondario è un indaco più chiaro / lilla.
+     I pulsanti e alcuni box hanno due estremità opposte arrotondate per riprendere
+    la forma del logo e creare quindi un sistema più consistente.
+   </p>
+   </div>
+
+   <img src='immagini/bali-kit-ita.svg' alt="design kit" class='img-fluid'/>
+   </div>
+</div>
+</div>
+</section>
+
+<section id='hero3'>
+<div class='container'>
+  <div class='row align-items-center'>
+    <div class='col1'>
+<h1>
+<span>PROTOTIPO</span> <span class='dash'>&#124;</span> <span class="role">Desktop </span>
+</h1>
+<br/>
+</div>
+<div class='col'>
+<video width="85%"playsinline autoplay muted loop>
+    <source src="video/bali-video-desk.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded video.
+</video>
+</div>
+</div>
+</div>
+
+    <div class='container'>
+      <div class='row align-items-center'>
+       <div class='col1'>
+<h1>
+<span>PROTOTIPO</span> <span class='dash'>&#124;</span> <span class="role">Mobile &amp; App </span>
+</h1>
+</div>
+  <div class='col'>
+<video  width="200px" playsinline autoplay muted loop>
+    <source src="video/bali-video-mobile.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded video.
+</video>
+</div>
+
+<div class='col'>
+<video  width="200px" playsinline autoplay muted loop>
+<source src="video/bali-video-app.mp4"
+        type="video/mp4">
+Sorry, your browser doesn't support embedded video.
+</video>
+</div>
+
+</div>
+</section>
+
+
+
+
+<section id='#f8f9fa'>
+
+    <div class='container'>
+      <div class='row align-items-center'>
+
+          <h1>TEST DI USABILITÀ</h1>
+          <div class='container'>
+            <div class='row'>
+              <div class="column-twin">
+    <p>Per questo progetto non ho condotto un reale test, ho solo ipotizzato
+      di effettuare 3 test con vari task sui principali aspetti delle interfacce al fine di determinare i livelli di usabilità. <br/>
+      I partecipanti dovrebbero essere i clienti attuali e/o follower del brand contattati tramite email
+      o post pubblicati nei canali social con il seguente invito:</p>
+      <p><em>"Stiamo apportando delle modifiche al nostro sito baliyoga.it per migliorare i servizi che offriamo,
+per rendere la navigazione più semplice e l’esperienza delle persone che lo usano più piacevole.<br/>
+        Per farlo ABBIAMO BISOGNO DI TE.<br/>
+        Vogliamo imparare grazie ai tuoi feedback o suggerimenti che saranno preziosi per migliorare i nostri servizi.<br/>
+        Per questo ti invitiamo a partecipare a un test che durerà circa 10-15 minuti in cui ti chiederemo di svolgere delle
+        azioni all’interno del sito.<br/>
+        Ciò che testeremo sono le pagine non le persone quindi non esitare!"</em></p>
+      <br/>
+        <p>L’utente può scegliere se fermarsi al primo test o completarli tutti e 3.<br/>
+          In cambio della partecipazione verrebbe offerto uno dei seguenti vantaggi per ringraziare i tester
+          del contributo e il tempo dedicato:<br/>
+<ul>
+  <li> sconto su un pacchetto lezioni </li>
+<li> gadget brandizzato (fascia economica) </li>
+<li> accesso ad un contenuto video esclusivo. </li>
+</ul>
+ </p>
+</div>
+
+
+
+      <div class="column-twin">
+  <p>CRITERI<br/>
+ <ul class='b'>
+ <li> Di persona, moderato</li>
+ <li> Tempo assegnato</li>
+ <li> Target di 5 utenti (m&#47;f) con proficienza medio&#47;alta dei device (perchè la prenotazione online è sempre richiesta)</li>
+ </ul>
+
+
+ <p>METRICHE<br/>
+   <ul class='b'>
+   <li> Tasso di completamento task</li>
+   <li> Tempo di completamento</li>
+   <li> Primo click </li>
+   <li> Tempo medio sulla pagina e numero di click </li>
+   <li> Tasso di errore </li>
+ </ul>
+</div>
+
+<hr class="horizontal">
+
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+<h2>
+TEST 1 <span class="dash"> Interfaccia Desktop, Mobile &amp; App  </span>
+</h2>
+<br/>
+<p><b>Metodo: Test scritto, moderato</b><br/>
+3 task scenario che coprono tutto il percorso necessario all'utente per usufruire di un corso individuale. </p>
+<br/>
+<p><b>TASK SCENARIO A</b><br/>
+  "Non hai mai fatto yoga ma saresti interessato/a a praticarla. Ti è stato consigliato il centro Bali Yoga
+che offre 1 lezione di prova gratuita.
+<br/>
+Ti trovi nella homepage del sito e vorresti richiedere una lezione gratis. Dove cliccheresti?"<br/>
+<br/>
+OBIETTIVO A<br/>
+Capire se l’utente che interagisce con il sito per la prima volta apprende immediatamente che può
+ottenere una lezione gratuita.
+  </p>
+  <br/>
+<br/>
+</div>
+
+<div class='col'>
+  <p><b>TASK SCENARIO B</b><br/>
+  "Sei intenzionato a fare yoga da casa tua tramite lezioni online, per questo vorresti acquistare un pacchetto
+dedicato esclusivamente alle lezioni interattive.<br/>
+Vuoi acquistare <em>5 Lezioni</em> da effettuare esclusivamente a casa. Dove andresti per comprare questo pacchetto?"
+<br/>
+<br/>
+
+OBIETTIVI B<br/>
+Si può procedere in vari modi, tramite: <br/>
+<ul>
+  <li> Pulsante "Acquista" nella header  </li>
+  <li> Menu &gt; Lezioni</li>
+</ul></p>
+
+<p>Capire se la suddivisione dei pacchetti palestra / interattivi è sufficientemente chiara e se l’utente
+capisce velocemente che alcuni sono misti.
+  </p>
+</div>
+
+<div class='col1'>
+  <p><b>TASK SCENARIO C</b><br/>
+  "Hai già un’abbonamento ai corsi yoga e vorresti solo prenotare la tua prossima lezione sul Calendario
+del sito. <br/>
+
+Vorresti segnarti per la lezione serale di venerdì 16 marzo tenuta dall’insegnante Fabrizio. In che
+pagina andresti?"</p>
+<br/>
+
+OBIETTIVI C<br/>
+E’ possibile completare il task tramite:<br/>
+<ul>
+  <li> Pulsante "Prenota" in header</li>
+  <li> CTA in pagina <em>Lezioni</em></li>
+
+</ul>
+</p>
+  <p>Capire se la procedura di prenotazione risulta fluida e facile per l’utente.  </p>
+</div>
+
+<hr class="horizontal">
+
+
+    <div class='col1'>
+<h2>TEST 2 <span class="dash"> Interfaccia Desktop &amp; Mobile  </span>
+</h2>
+<br/>
+<p><b>Metodo: Test dei 5 secondi</b><br/>
+<br/>
+
+<p>Viene mostrata la pagina <em>Lezioni</em> e chiesto all’utente
+di memorizzare più elementi possibili in 5 secondi.
+Scaduto il tempo gli si fanno alcune domande.
+</p><br/>
+
+<p><b>DOMANDE </b><br/>
+<ul>
+  <li> Qual è il servizio offerto nella pagina che hai visto?</li>
+  <li> Cosa puoi fare tramite questa pagina?</li>
+  <li> Cosa puoi fare se clicchi il pulsante tutto blu?</li>
+  <li> Questa pagina ti dà info sulle lezioni interattive?</li>
+</ul>
+</p><br/>
+
+OBIETTIVI<br/>
+
+Valutare se:<br/>
+<ul>
+  <li> La UI comunica correttamente il messaggio</li>
+  <li> I contenuti sono subito chiari</li>
+  <li> Le CTA sono percepite correttamente.</li>
+</ul>
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id='hero3'>
+
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+<h1>INTERFACCIA MOBILE </h1>
+
+</div>
+<img src='immagini/bali-mobile-ui-ita.svg' alt='Mobile Interface' class='img-fluid'/>
+</div>
+
+
+
+</section>
+
+
+<div class='nyume'> <!--final thoughts-->
+  <div class='container'>
+    <div class='row'>
+
+
+      <section class='nyume'>
+
+        <div class='container'>
+          <div class='row align-items-center'>
+
+            <div class='col'>
+             <h1>CONSIDERAZIONI FINALI</h1>
+</div>
+
+
+
+<div class='container'>
+<div class='row'>
+
+      <div class="column-twin">
+<h5 class='green'>COME GLI ERRORI DURANTE LA RICERCA PORTANO IL DESIGN IN ALTRE DIREZIONI</h5>
+<p>Non è stato possibile chiedere al target di navigare il sito
+attuale, questa costrizione ha probabilmente fatto virare le
+soluzioni progettuali in un’altra direzione perchè ho fatto
+domande generiche.
+Nonostante ciò ho ottenuto degli input utili.</p>
+</div>
+
+<div class="column-twin">
+<h5 class='green'>L’APP OFFRE DAVVERO UN VALORE
+AGGIUNTO?</h5>
+<p>Attualmente no, perchè non ha funzionalità extra rispetto a quelle presenti nel sito.
+L’utente può acquistare e tenere sotto controllo le sue tessere e il calendario prenotazioni.
+Nel redesign ho aggiunto il login nella header dell’interfaccia desktop e mobile, quindi l’utente può tenere sotto controllo
+la sua attività anche dal sito senza necessità di usare l’app.<br/>
+<b>Aggiungere una feature:</b> per rendere l’app più utile si
+potrebbe ad esempio aggiungere uno “Yoga Calories
+Counter”, in modo che l’utente possa calcolare quante
+calorie ha bruciato per ogni sessione di attività (minuti /
+livello) per stimolare la motivazione e aumentare il suo engagement con il servizio aziendale.
+</p>
+</div>
+
+
+
+
+</div>
+
+</div>
+</div>
+
+</section>
+
+
+
+
+   <div id='next-project'> <!--Next project-->
+             <div class='col'>
+             <h4>
+               <a id='mybtn-side'href='nyume-ita.html'>&#9664;&nbsp;</a>&nbsp;PROSSIMO PROGETTO&nbsp;<span class='dash'>&colon;</span>
+             <span class="role-w">Girlfriend Collective</span> <a id='mybtn-side' href='girlfriend-ita.html'>&#9654;</a>
+           </h4>
+         </div>
+       </div>
+     </div>
+</div>
+
+</div>
+
+
+<section id='footer'> <!--Footer-->
+    <div class='container'>
+      <div class='row align-items-center'>
+        <div class='col'>
+  <p>
+    &copy;2021 Jasmine-Exavier Webster&nbsp;&nbsp;&nbsp;&nbsp;<span class='dash4'>&#124;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class='link-footer' href='https://www.linkedin.com/in/jasminewebster/' target='_blank'>
+        Linkedin&nbsp;&nbsp;</a>
+
+      &nbsp;&nbsp;<span class='dash4'>&#124;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class='link-footer' href='https://jasminewebster.wixsite.com/jasminewebster'target='_blank'>
+        Graphic Design&nbsp;&nbsp;<a>
+</p>
+</div>
+</div>
+</div>
+</section> <!--End Footer-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#9650;</button>
+
+
+
+ <script> <!-- Back to top -->
+ //Get the button
+ var mybutton = document.getElementById("myBtn");
+
+ // When the user scrolls down 20px from the top of the document, show the button
+ window.onscroll = function() {scrollFunction()};
+
+ function scrollFunction() {
+   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+     mybutton.style.display = "block";
+   } else {
+     mybutton.style.display = "none";
+   }
+ }
+
+ // When the user clicks on the button, scroll to the top of the document
+ function topFunction() {
+   document.body.scrollTop = 0;
+   document.documentElement.scrollTop = 0;
+ }
+ </script> <!--End Back to top button-->
+
+
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>

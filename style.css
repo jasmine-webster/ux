@@ -10,7 +10,10 @@ body {
   font-family: 'Inconsolata', monospace !important;
 }
 
-
+.language{
+  display: inline !important;
+  font-size: 25px !important;
+}
 
 nav {
   height: 65px;
@@ -253,6 +256,14 @@ section p {
   color: #5fcfb3;
   text-decoration: none;
 }
+
+.dash6 {
+  color: #707c99;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+
 
 #footer {
   background-color: #5fcfb3;
