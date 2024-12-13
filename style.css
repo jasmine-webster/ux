@@ -152,8 +152,9 @@ section p {
       padding-bottom: 50px;
       align-items: center;
       display: flex;
+      align-items: center;
       justify-content: center;
-    }
+        }
 
 
 .nyume {
@@ -503,7 +504,7 @@ color: #707c99;
 height: 15rem;
 width: 25rem;
 margin: 2rem;
-box-shadow: 0 .3rem .3rem rgba(0, 0, .5);
+border: 1px outset #5fcfb3;
 overflow:hidden;
 }
 
