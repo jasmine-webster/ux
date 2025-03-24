@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Jasmine Webster </title>
+<!-- CSS only -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Inconsolata&display=swap" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+           $(document).ready(function(){
+           $('ul li a').click(function(){
+           $('li a').removeClass("active");
+           $(this).addClass("active");
+           });
+           });
+     </script>
+    </head>
+
+
+ <body>
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+
+       <a class="navbar-brand" href="index.html">
+   <img src='immagini/mylogo.svg' class='logo' alt='logo' width='100px'/></a>
+
+
+ <!-- Menu toggler -->
+        <div id="myNav" class="overlay" >
+
+      <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="about.html">ABOUT</a>
+        <br/>
+        <a href="baliyoga.html">PORTFOLIO</a>
+        <br/>
+        <a href="ui-animation.html">UI ANIMATION</a>
+        <br/>
+        <a href="contact.html">CONTACT</a>
+        <br/>
+          <a class='language' href="index-ita.html">ITA</a> <span class='dash6'>&#124;</span> <a class='language' href="index.html">ENG</a>
+      </div>
+    </div>
+
+
+    <span id='burger'style="font-size:20px;cursor:pointer" onclick="openNav()">menu &#9776; </span>
+
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "70%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script> <!-- End Menu toggler -->
+
+
+   </nav>
+   <!-- End Navbar -->
+
+   <section id='hero6'>
+   <div class='container'>
+     <div class='row align-items-center'>
+     <div class='col1'>
+
+      <h1>
+      <span>ZURICH BANK </span> <span class='dash'>&#124;</span> <span class="role2"> Geolocator </span>
+   </h1>
+
+ <p>A leading company in the financial sector, offering financial and
+   asset planning and management products and services in the Italian market.</br>
+
+   <p><b>Objective:</b> Enable users to find a financial advisor through an internal geolocation tool on the website.</p>
+
+         <p><b>Role in the agency:</b> UX and UI design, I covered all design phases defining the appropriate methodologies.
+           The team also included a project manager and developers.
+   </p>
+   <p><b>Duration:</b> 8 weeks.</p>
+
+</div>
+<div class='col'>
+<img src='immagini/zurich-all.svg' alt='schermata prototipo zurich' class='img-fluid'/>
+</div>
+
+</section>
+
+<section>
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+<h1>BENCHMARKING </h1>
+  <p>Companies that offer a geolocation tool on their website were analyzed.</P>
+<p>3 types of competitors were identified:<br/>
+    <ul>
+      <li> COMPETITOR DIRETTI: DIRECT COMPETITORS: Banks and companies that offer
+        financial products/services in the Italian market, targeting the same audience as Zurich Bank. </li></p>
+       <li> INDIRECT COMPETITORS: Companies that offer a different product but address
+         the same need of the target audience.</li></p>
+        <li> COMPARABLES: Companies that have faced a similar problem in different contexts,
+          as successful solutions could be adapted to meet specific needs. </li>
+      </ul></p>
+<br></br>
+
+ <h2>Analysis Methods</h2>
+ <p>  <ul class='b'>
+     <li> FEATURES INVENTORY<br/>
+   On direct and indirect competitors to compare existing and missing functionalities.<br/>
+</br>
+   <li> CTA AND NUMBER OF CLICKS TO REACH THE LOCATOR<br/>
+     On direct competitors, both desktop and mobile versions.<br/>
+<br/>
+<li> TASK ANALYSIS TO FIND A FINANCIAL ADVISOR OR AGENCY WITHIN THE LOCATOR<br/>
+  On direct competitors.<br/>
+<br/>
+<li> NUMBER OF CLICKS TO FIND A SPECIFIC ELEMENT (ADVISOR, AGENCY, RESELLER) IN THE LOCATOR<br/>
+Across all three types of competitors.<br/>
+</br>
+<li> UI ELEMENTS<br/>
+Across all three types of competitors.<br/>
+</p>
+</br>
+</div>
+
+
+
+
+<div class='col'>
+<img src='immagini/zurich-feature-inventory.svg' alt="Feature inventory" class='img-fluid'/>
+</div>
+
+
+
+
+  <div class='container'>
+    <div class='row align-items-center'>
+    <div class='col1'>
+<h2>Other Aspects Explored</h2>
+<p>
+  <ol>
+    <li> <b>The Locator as a touchpoint for lead generation</b><br/>
+    <!-- nascondi:  L’esperienza utente con un'azienda può iniziare con un
+localizzatore di rivenditori, agenti o consulenti, quindi sfruttare
+questo sistema può rafforzare il marchio in più punti di contatto con i clienti.</br>
+Deve essere facile da trovare, prevedendo una cta ben visibile nel sito.</li>
+       <br/> -->
+<li> <b>UX Best Practices in locator design</b></br>
+<!-- nascondi:  L’utente non si chiede “C’è un consulente a 5 km da
+me?” ma “Chi è il miglior consulente nella mia zona?”.</br>
+<ul>
+  <li> Utile mostrare da 5 a 10 risultati rilevanti per l’utente.</li>
+<li> L’invito all’azione deve essere above-the-fold in tutti i device. </li>
+<li> La posizione dell'utente dovrebbe essere segnalata
+tramite clue visivo per aiutarlo ad orientarsi spazialmente. </li>
+<li> Il campo di ricerca dovrebbe accettare quasi tutti i termini
+geografici e supportare una
+funzione di autocompletamento.</li></ul>
+  <br/>-->
+<li> <b>Google Maps Best Practices</b><br/>
+<!-- nascondi:  Mostrare la location su una mappa dinamica, fornire dettagli sul luogo, mostrare il tempo di percorrenza e fornire indicazioni precise in base al mezzo di trasporto.</br>
+  Un'esperienza positiva evita che l'utente abbandoni il sito per scegliere un locator più performante e che
+  mostrerà come risultati anche consulenti competitor.-->
+</ol> </p>
+
+</div>
+</section>
+
+<section id='hero6'>
+<div class='container'>
+  <div class='row align-items-center'>
+  <div class='col1'>
+    <br/>
+    <h2>Some findings from the analysis</h2>
+    <p>
+      <ul>
+        <li> Many competitors require more than 3 clicks to reach the geolocation tool (find a consultant).</li>
+        <li> Only a few competitors have a full-width interactive map.</li>
+        </p>
+
+      </div>
+
+
+      <div class='col'>
+        <br/> <br/>
+    <p>
+      <ul>
+        <li> Some competitors display the number of search results.</li>
+    <li> In many competitors, the advisor profile cards do not support click-to-call functionality.</li>
+  </ul>
+</p>
+
+
+</div>
+</section>
+
+
+<section style='#f8f9fa'>
+  <div class='container'>
+    <div class='row align-items-center'>
+    <div class='col1'>
+   <h1>USER RESEARCH</h1>
+   <p>The information gathered during the briefing phase
+     on the target audience helped define the characteristics of users to involve in the research.</br></br>
+     <b>Data to collect: </b><br/>
+     <ul>
+       <li> Criteria for choosing a financial advisor</li>
+       <li> What are the characteristics of the geolocator most frequently used</li>
+       <li> What aspects of the geolocator users would like to improve or change.</li>
+       <li> Which device do users use most to consult a geolocator.</li>
+  </ul>
+</p>
+     </div>
+
+     <div class='col'>
+     <img src='immagini/zurich-survey.svg' alt="Survey" class='img-fluid'/>
+     </div>
+
+     <div class='container'>
+       <div class='row align-items-center'>
+     <div class='col1'>
+       <br/>
+     <h2>Research method and selection parameters</h2>
+     <p>A <strong>quantitative research type</strong> was conducted to
+       collect statistical data and draw conclusions regarding users' general behavior. </br></br>
+Questionnaire with initial screening and multiple-choice and open-ended questions,
+distributed to a panel that met the following criteria:
+
+     <ul>
+       <li> Country</li>
+       <li> Age group</li>
+       <li> Income range</li>
+       <li> Trading method</li>
+       <li> Types of financial products</li>
+     </ul></p>
+
+    <p> The number required was 100, <strong>the questionnaire was completed by 120 respondent</strong>.<br/>
+     </p>
+
+     </div>
+ </div>
+</section>
+
+
+<section id='hero6'>
+<div class='container'>
+  <div class='row align-items-center'>
+
+    <div class='col'>
+      <br/>
+     <p>SOME COLLECTED DATA</p>
+</div>
+
+
+<div class='container'>
+<div class='row'>
+<div class="column-twin">
+
+<p>
+ <font size="+2">36%</font> of users rely on a <b>specific competitor</b> for wealth planning and management<br/>
+</p>
+
+<p>
+<font size="+2">40%</font> of users search for a financial advisor <b>by asking their bank</b> for information</b>.<br/>
+</p>
+
+<p>
+<font size="+2"> 75%</font> choose <b>Google Maps</b> even if the website they are browsing
+has its own locator, and 90% use it as their <b>regular geolocator</b>.<br/>
+
+  <p>
+  <font size="+2">90%</font> believe the locator they use most frequently is the best
+  because of its <b>simple and easy-to-use interface</b>.
+</p>
+</div>
+
+<div class="column-twin">
+
+<p>
+<font size="+2">88%</font> of respondents consider it important to view <b>photos of locations</b>
+when searching for an address using a locator.</p>
+
+<p>
+On the other hand, <font size="+2">55%</font> believe the presence of a financial advisor's <b>profile card</b>
+is more important than their photo.</p>
+
+<p>
+The most difficult aspect of using a locator, according to <font size="+2">37%</font>
+of users, is the <b>lack of filters</b> they consider useful.</p>
+
+<p>
+  For <font size="+2">74%</font>, the most challenging aspect of using the locator
+  <b>on mobile is the small screen size</b>.</p>
+</div>
+
+* Data related to filters and more technical aspects were also gathered.
+
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- FINE COLLECTED DATA-->
+
+
+
+<section style='#f8f9fa'>
+  <div class='container'>
+    <div class='row align-items-center'>
+   <div class='col'>
+     <h1>2 PERSONAS</h1>
+   <img src='immagini/zurich-personas.png' alt="Personas" class='img-fluid'/>
+ </div>
+
+</div>
+
+<!-- flusso utente -->
+
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+   <h1>USER JOURNEY</h1>
+   <h2>Current-state and future-state</h2>
+
+   <p>Each target group (Personas) is driven by different motivations and goals,
+     which results in at least one user journey for each.</br>
+   A <b>first user journey</b> was developed based on the collected data, uncovering areas for improvement.
+   These insights informed the design of a <b>second journey</b>, aimed at enhancing the user experience within the locator.
+  </p>
+   </div>
+
+
+</section>
+
+ <section id='hero6'>
+ <div class='container'>
+   <div class='row align-items-center'>
+
+     <div class='col'>
+   <img src='immagini/zurich-journey.png' alt="User journey" class='img-fluid'/>
+
+</div>
+</div>
+
+</section>
+
+
+<section>
+<div class='container'>
+  <div class='row align-items-center'>
+
+   <div class='col1'>
+   <h1>USER FLOW</h1>
+   <h2>Desktop and mobile versions</h2>
+   <p>The paths that Personas will take within the locator to achieve a specific goal.</p>
+   </div>
+
+   <img src='immagini/zurich-flow.svg' alt="User flow" class='img-fluid'/>
+
+
+
+   <div class='col1'>
+   <h1>WIREFRAMING</h1>
+   <p>The design process was followed by the creation of interactive wireframes.</p>
+
+ </div>
+<div class='col'>
+   <img src='immagini/zurich-wireframe.svg' alt="Zurich wireframe"class='img-fluid'/>
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- Ui start-->
+
+<section id='hero6'>
+<div class='container'>
+  <div class='row align-items-center'>
+     <div class='col1'>
+   <h1>UI KIT</h1>
+   <p>The client had a design system that was expanded with new UI components.
+   </p>
+   </div>
+
+   <img src='immagini/zurich-kit-ita.svg' alt="design kit" class='img-fluid'/>
+   </div>
+</div>
+</div>
+</section>
+
+<!-- Nascondi per ora
+<section id='hero3'>
+<div class='container'>
+  <div class='row align-items-center'>
+    <div class='col1'>
+<h1>
+<span>PROTOTIPO</span> <span class='dash'>&#124;</span> <span class="role">Desktop </span>
+</h1>
+<br/>
+</div>
+<div class='col'>
+<video width="85%"playsinline autoplay muted loop>
+    <source src="video/bali-video-desk.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded video.
+</video>
+</div>
+</div>
+</div>
+
+    <div class='container'>
+      <div class='row align-items-center'>
+       <div class='col1'>
+<h1>
+<span>PROTOTIPO</span> <span class='dash'>&#124;</span> <span class="role">Tablet &amp; Mobile </span>
+</h1>
+</div>
+  <div class='col'>
+<video  width="200px" playsinline autoplay muted loop>
+    <source src="video/bali-video-mobile.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded video.
+</video>
+</div>
+
+<div class='col'>
+<video  width="200px" playsinline autoplay muted loop>
+<source src="video/bali-video-app.mp4"
+        type="video/mp4">
+Sorry, your browser doesn't support embedded video.
+</video>
+</div>
+
+</div>
+</section>
+ -->
+
+ <div class='nyume'>
+   <div class='container'>
+     <div class='row align-items-center'>
+       <div class='col1'>
+       </br>
+       </br>
+
+<h1>SOME MOCKUPS</h1>
+
+</div>
+<img src='immagini/zurich-mobile-ui.svg' alt='Mobile Interface' class='img-fluid'/>
+</div>
+</div>
+
+
+
+
+
+
+<!-- End Section  -->
+
+<div id='next-project'> <!--Next project-->
+ <div class='col'>
+          <h4>
+            <a id='mybtn-side'href='girlfriend.html'>&#9664;&nbsp;</a>&nbsp;NEXT PROJECT&nbsp;<span class='dash'>&colon;</span>
+          <span class="role-w">Nyu&middot;me</span> <a id='mybtn-side' href='nyume.html'>&#9654;</a>
+        </h4>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<section id='footer'> <!--Footer-->
+    <div class='container'>
+      <div class='row align-items-center'>
+        <div class='col'>
+  <p>
+    &copy;2024 Jasmine-Exavier Webster&nbsp;&nbsp;&nbsp;&nbsp;<span class='dash4'>&#124;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class='link-footer' href='https://www.linkedin.com/in/jasminewebster/' target='_blank'>
+        Linkedin&nbsp;&nbsp;</a>
+
+      &nbsp;&nbsp;<span class='dash4'>&#124;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class='link-footer' href='https://jasminewebster.wixsite.com/jasminewebster'target='_blank'>
+        Graphic Design&nbsp;&nbsp;<a>
+</p>
+</div>
+</div>
+</div>
+</section> <!--End Footer-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#9650;</button>
+
+
+
+ <script> <!-- Back to top -->
+ //Get the button
+ var mybutton = document.getElementById("myBtn");
+
+ // When the user scrolls down 20px from the top of the document, show the button
+ window.onscroll = function() {scrollFunction()};
+
+ function scrollFunction() {
+   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+     mybutton.style.display = "block";
+   } else {
+     mybutton.style.display = "none";
+   }
+ }
+
+ // When the user clicks on the button, scroll to the top of the document
+ function topFunction() {
+   document.body.scrollTop = 0;
+   document.documentElement.scrollTop = 0;
+ }
+ </script> <!--End Back to top button-->
+
+
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
