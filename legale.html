@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Jasmine Webster </title>
+<!-- CSS only -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Inconsolata&display=swap" rel="stylesheet">
+
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+           $(document).ready(function(){
+           $('ul li a').click(function(){
+           $('li a').removeClass("active");
+           $(this).addClass("active");
+           });
+           });
+     </script>
+    </head>
+
+
+ <body>
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+
+       <a class="navbar-brand" href="index.html">
+   <img src='immagini/mylogo.svg' class='logo' alt='logo' width='100px'/></a>
+
+
+ <!-- Menu toggler -->
+        <div id="myNav" class="overlay" >
+
+      <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="about.html">ABOUT</a>
+        <br/>
+        <a href="baliyoga.html">PORTFOLIO</a>
+        <br/>
+        <a href="ui-animation.html">UI ANIMATION</a>
+        <br/>
+        <a href="contact.html">CONTACT</a>
+        <br/>
+          <a class='language' href="index-ita.html">ITA</a> <span class='dash6'>&#124;</span> <a class='language' href="index.html">ENG</a>
+      </div>
+    </div>
+
+
+    <span id='burger'style="font-size:20px;cursor:pointer" onclick="openNav()">menu &#9776; </span>
+
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "70%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script> <!-- End Menu toggler -->
+
+
+   </nav>
+  <!-- End Navbar -->
+
+   <section id='hero6'>
+   <div class='container'>
+     <div class='row align-items-center'>
+     <div class='col1'>
+
+      <h1>
+      <span>LEGAL*** </span> <span class='dash'>&#124;</span> <span class="role2"> Legal database </span>
+   </h1>
+
+ <p> Legal information system that enables intelligent and targeted searches,
+   guiding user in the quick and accurate selection of relevant information for developing their strategy.
+</br>
+
+   <p><b>Objective:</b> Making the existing desktop-only legal database
+     accessible through a mobile app by designing an intuitive and user-friendly interface.</p>
+
+         <p><b>Role in the agency:</b> UX e UI designer. </br>
+           I covered all design phases defining the appropriate methodologies.
+           The team also included a project manager and developers.
+   </p>
+   <p><b>Duration:</b> 2 months.</p>
+
+</div>
+<div class='col'>
+<img src='immagini/dejure-all.svg' alt='schermata prototipo zurich' class='img-fluid'/>
+</div>
+
+</section>
+
+<section>
+<div class='container'>
+  <div class='row align-items-center'>
+<div class='col1'>
+<h1>COMPETITIVE ANALYSIS</h1>
+  <p>The competitors are <b>generalist legal databases</b>
+    that operate like a text-based search engine and use the same guided search structure.</p>
+<p>The systems are analyzed using the <b>Features Inventory</b> method to compare existing
+  and missing features and filters, with the aim of understanding how other databases
+  assist user in defining the perimeter of his intended search.</p>
+
+</div>
+
+<div class='container'>
+  <div class='row align-items-center'>
+    <div class='col1'>
+<h2>Heuristic evaluation</h2>
+<p>
+  To design the user experience for the app, it was first necessary to conduct a qualitative
+  analysis based on Nielsen’s 10 principles to determine if the pages of the interface adhered to <b>usability principles</b>.
+</p>
+<img src='immagini/dejure-euristiche.svg' alt="Revisione euristica" class='img-fluid'/>
+
+
+</div>
+</section>
+
+<section id='hero6'>
+<div class='container'>
+  <div class='row align-items-center'>
+  <div class='col1'>
+    <br/>
+    <h2>Qualche dato emerso dall'analisi</h2>
+    <p>
+      <ul>
+        <li> Compared to competitors, the client's system offers <b>fewer search combinations</b>
+          for exact words / phrases / exclusions.</li>
+        </p>
+      </div>
+
+
+      <div class='col'>
+        <br/> <br/>
+    <p>
+      <ul>
+        <li> The advanced search in the client's system offers more
+          selection criteria and includes <b>dynamic filters</b>.</li>
+    </ul>
+ </p>
+</div>
+</section>
+
+
+<section style="background-color: #f8f9fa;">
+  <div class='container'>
+    <div class='row align-items-center'>
+    <div class='col1'>
+   <h1>USER RESEARCH</h1>
+   <h2>"How should your online legal database be?"</h2>
+   <p>It is hypothesized that the target audience consists of two types of users:
+
+     <ul>
+       <li> 18 - 29 years</br>
+         the <b>law student</b> or law trainee.</li></br>
+       <li> 30 - 65 years</br>
+         the <b>legal professional</b> lawyer, notary, legal expert, consultant.</li>
+    </ul>
+  </p>
+
+  <p>  Within these two user segments, there will be 3 different levels of tech proficiency:
+
+
+<ul class='b'>
+<li> Beginner</li>
+<li> Intermediate</li>
+<li> Advanced</li>
+</ul>
+</p>
+     </div>
+
+     <div class='col'>
+     <img src='immagini/dejure-interview.svg' alt="Interview" class='img-fluid'/>
+     </div>
+
+     <div class='container'>
+       <div class='row align-items-center'>
+     <div class='col1'>
+       <br/>
+     <h2>Research Methods</h2>
+     <p>To understand how users interact with an
+       online legal database and how they consult the available documents, two types of research were conducted:
+
+
+     <ul>
+       <li> <b>Quantitative Research - questionnaire</b> </br>
+         o collect statistical data and draw conclusions about the general behavior of users.</li>
+         * Multiple-choice and open-ended questionnaire.</li></br>
+       </br>
+       <li> <b>Qualitative Research - interviews</b> </br>
+           To explore the user's experience with their database in more detail.</li>
+           * 3 interviews, one with a user subscribed to the client's database and two with subscribers to other databases.
+
+     </ul></p></br>
+
+    <p> <b>The main objectives are to discover:</b>
+
+      <ul class='b'>
+      <li> Why the user chose the database he is subscribed to and why he prefers it over
+        other options on the market.</li> </br>
+      <li> The context in which he primarily uses the database and which archives
+        he consults most frequently.</li> </br>
+      <li> Which missing functionalities he considers crucial for optimizing search or document consultation.</li>
+    </ul>
+    <p>
+* NOTE: Since current users of the client cannot be included, the questionnaire was submitted to a sample of target users.
+
+
+
+     </p>
+
+     </div>
+ </div>
+</section>
+
+
+<section id='hero6'>
+<div class='container'>
+  <div class='row align-items-center'>
+
+    <div class='col'>
+      <br/>
+     <p>SOME DATA COLLECTED
+     </p>
+</div>
+
+
+<div class='container'>
+<div class='row'>
+<div class="column-twin">
+
+<p>
+ <font size="+2">50%</font> of users use the <b>client's database</b> and prefer it over
+ competitor platforms for its <b>more intuitive graphic interface</b>.<br/>
+</p>
+</div>
+
+<div class="column-twin">
+
+<p>
+<font size="+2">100%</font>of users mainly consult the <b>Jurisprudence</b> archive
+within their database to search for <b>similar cases</b> to the ones they are working on
+and <b>to stay updated</b> on the legal trends.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- FINE COLLECTED DATA-->
+
+
+
+<section style="background-color: #f8f9fa;">
+  <div class='container'>
+    <div class='row align-items-center'>
+   <div class='col1'>
+     <h1>PERSONAS AND USER JOURNEY</h1>
+         <p>The research confirmed the initially hypothesized target groups. </br>
+    For each, a user journey was defined, which revealed critical issues that were addressed
+    in a second user journey, designed to <b>improve the user experience</b> with the database</b>.
+    </p>
+  </div>
+   <img src='immagini/dejure-personas.png' alt="Personas" class='img-fluid'/>
+ </div>
+
+</div>
+
+<!-- flusso utente -->
+
+
+
+<section>
+<div class='container'>
+  <div class='row align-items-center'>
+
+   <div class='col1'>
+   <h1>INFORMATION ARCHITECTURE</h1>
+    <p>The hierarchical structure of the app with
+      category groups and the relationship between the app's screens.</p>
+   </div>
+
+   <img src='immagini/dejure-sitemap.svg' alt="Information architecture" class='img-fluid'/>
+
+
+
+   <div class='col1'>
+   <h1>USER FLOW</h1>
+   <p>The two paths taken by the two Personas within the app to achieve a specific goal have been outlined.</p>
+</div>
+ <div class='col'>
+   <img src='immagini/dejure-flow.png' alt="User flow"class='img-fluid'/>
+</div>
+
+
+</section>
+
+
+<section id='hero6'>
+<div class='container'>
+  <div class='row align-items-center'>
+     <div class='col1'>
+   <h1>MID-FI WIREFRAME</h1>
+   <p>Structure, content, hierarchy, functionality, and behavior of the interface.
+   </p>
+   </div>
+
+   <img src='immagini/dejure-wireframe.svg' alt="wireframe" class='img-fluid'/>
+   </div>
+</div>
+</div>
+</section>
+
+
+
+
+
+<!-- Ui start-->
+
+<section>
+<div class='container'>
+  <div class='row align-items-center'>
+     <div class='col1'>
+   <h1>DESIGN KIT</h1>
+   <p>The app uses colors and font family of the corresponding website to ensure consistency with the brand identity.
+   </p>
+   </div>
+
+   <img src='immagini/dejure-kit.svg' alt="design kit" class='img-fluid'/>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+
+
+<section id='hero6'>
+   <div class='container'>
+     <div class='row align-items-center'>
+       <div class='col1'>
+
+<h1>THE RESULTS</h1>
+<p>An app for quick advanced search in the most consulted archives: Jurisprudence, Legislation and Forms.
+</div>
+<img src='immagini/dejure-mockup.png' alt='Mobile Interface' class='img-fluid'/>
+</div>
+
+
+
+<!-- End Section  -->
+
+<section id='next-project'> <!--Next project-->
+
+ <div class='col'>
+          <h2>
+            <a id='mybtn-side'href='girlfriend.html'>&#9664;&nbsp;</a>&nbsp;NEXT PROJECT&nbsp;<span class='dash'>&colon;</span>
+          <span class="role">Bank***</span> <a id='mybtn-side' href='banca.html'>&#9654;</a>
+      </h2>
+      </div>
+</section>
+</section>
+</section>
+
+
+
+<section id='footer'> <!--Footer-->
+    <div class='container'>
+      <div class='row align-items-center'>
+        <div class='col'>
+  <p>
+    &copy;2024 Jasmine-Exavier Webster&nbsp;&nbsp;&nbsp;&nbsp;<span class='dash4'>&#124;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class='link-footer' href='https://www.linkedin.com/in/jasminewebster/' target='_blank'>
+        Linkedin&nbsp;&nbsp;</a>
+
+      &nbsp;&nbsp;<span class='dash4'>&#124;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class='link-footer' href='https://jasminewebster.wixsite.com/jasminewebster'target='_blank'>
+        Graphic Design&nbsp;&nbsp;</a>
+</p>
+</div>
+</div>
+</div>
+</section> <!--End Footer-->
+
+
+
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#9650;</button>
+
+
+
+ <script> <!-- Back to top -->
+ //Get the button
+ var mybutton = document.getElementById("myBtn");
+
+ // When the user scrolls down 20px from the top of the document, show the button
+ window.onscroll = function() {scrollFunction()};
+
+ function scrollFunction() {
+   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+     mybutton.style.display = "block";
+   } else {
+     mybutton.style.display = "none";
+   }
+ }
+
+ // When the user clicks on the button, scroll to the top of the document
+ function topFunction() {
+   document.body.scrollTop = 0;
+   document.documentElement.scrollTop = 0;
+ }
+ </script> <!--End Back to top button-->
+
+
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
