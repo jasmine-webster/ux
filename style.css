@@ -148,6 +148,9 @@ section p {
         color: #6d5c5c;
         }
 
+  #top25 {
+    background-color: #f4edf0; 
+    }
 
     .container-intro{
       padding-top: 80px;
