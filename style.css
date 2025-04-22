@@ -212,6 +212,13 @@ section p {
     color: #6d5c5c;
   }
 
+
+#white{
+    color: #ffffff;
+
+  }
+
+
   h2, .role{
     font-size: 30px;
     font-family: 'Inconsolata', monospace;
